@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/Causten-Regular.eot"),
+    url("../fonts/Causten-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Causten-Regular.woff2") format("woff2"),
+    url("../fonts/Causten-Regular.woff") format("woff"),
+    url("../fonts/Causten-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Causten-Medium';
+  src: url('../fonts/Causten-Medium.eot');
+  src: url('../fonts/Causten-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Causten-Medium.otf') format('otf'),
+    url('../fonts/Causten-Medium.ttf') format('truetype'),
+    url('../fonts/Causten-Medium.woff') format('woff'),
+    url('../fonts/Causten-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Causten-SemiBold';
+  src: url('../fonts/Causten-SemiBold.eot');
+  src: url('../fonts/Causten-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Causten-SemiBold.otf') format('otf'),
+    url('../fonts/Causten-SemiBold.ttf') format('truetype'),
+    url('../fonts/Causten-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Causten-Bold';
+  src: url('../fonts/Causten-Bold.eot');
+  src: url('../fonts/Causten-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Causten-Bold.otf') format('otf'),
+    url('../fonts/Causten-Bold.ttf') format('truetype'),
+    url('../fonts/Causten-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Core-Sans-C';
+  src: url('../fonts/Core-Sans-C.eot');
+  src: url('../fonts/Core-Sans-C.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Core-Sans-C.otf') format('otf'),
+    url('../fonts/Core-Sans-C.ttf') format('truetype'),
+    url('../fonts/Core-Sans-C.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Core-Sans-C-Heavy';
+  src: url('../fonts/Core-Sans-C-Heavy.eot');
+  src: url('../fonts/Core-Sans-C-Heavy.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Core-Sans-C-Heavy.otf') format('otf'),
+    url('../fonts/Core-Sans-C-Heavy.ttf') format('truetype'),
+    url('../fonts/Core-Sans-C-Heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.eot');
+  src: url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat.otf') format('otf'),
+    url('../fonts/Montserrat.ttf') format('truetype'),
+    url('../fonts/Montserrat.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Core-Sans-C-EBold';
+  src: url('../fonts/Core-Sans-C-EBold.eot');
+  src: url('../fonts/Core-Sans-C-EBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Core-Sans-C-EBold.otf') format('otf'),
+    url('../fonts/Core-Sans-C-EBold.ttf') format('truetype'),
+    url('../fonts/Core-Sans-C-EBold.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Core-Sans-C-Medium';
+  src: url('../fonts/Core-Sans-C-Medium.eot');
+  src: url('../fonts/Core-Sans-C-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Core-Sans-C-Medium.otf') format('otf'),
+    url('../fonts/Core-Sans-C-Medium.ttf') format('truetype'),
+    url('../fonts/Core-Sans-C-Medium.woff') format('woff');
+  font-display: swap;
+}
+
+:root {
+  --color-text-regular: #333;
+  --color-body: #ffffff;
+  --color-button: #8a33fd;
+  --color-disabled: #eaeaea;
+  --color-text: #807d7e;
+  --color-text-title: #3c4242;
+  --color-field-background: #f6f6f6;
+  font-family: "Causten";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text-regular);
+  background-color: var(--color-body);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1440px
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: inherit;
+
+  &:hover {
+    color: var(--color-text-title);
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input {
+  width: 267px;
+  height: 44px;
+  background: var(--color-body);
+}
+
+button, .button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Causten-Bold';
+  background-color: var(--color-body);
+  cursor: pointer;
+  transition: border-color 0.25s linear, color 0.24s linear;
+  color: var(--color-text-title);
+  display: inline-block;
+  width: auto;
+  text-align: center;
+
+  &:hover {
+    border-color: #646cff;
+    color: var(--color-button);
+  }
+  &.button--primary {
+    min-width: 250px;
+    min-height: 61px;
+  }
+}
+
+button:focus ,button:focus,
+button:focus-visible, .button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.section-padding {
+  padding-inline: 104px;
+  padding-block: 50px
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button, .button {
+    background-color: #f9f9f9;
+  }
+}

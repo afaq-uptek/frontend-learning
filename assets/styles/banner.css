@@ -1,0 +1,24 @@
+.section-banner {
+    .banner-wrapper {
+        .content-wrapper {
+            top: 50%;
+            transform: translateY(-50%);
+            left: 5%;
+
+            .pre-heading {
+                font-family: Montserrat;
+                font-weight: 800;
+            }
+
+            .sub-heading {
+                font-family: Core-Sans-C-Medium;
+                font-size: 16;
+            }
+
+            .heading {
+                font-size: 34px;
+                font-family: Core-Sans-C-EBold;
+            }
+        }
+    }
+}

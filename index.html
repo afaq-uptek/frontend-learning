@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="main" class="container container-2xl">
+      <div id="section-header" class="flex section-header w-full">
+        <section class="header-container py-8 flex flex-wrap items-center w-full justify-between gap-18">
+          <div class="logo-container w-auto">
+            <img src="/assets/Logo.png" alt="Site logo" class="logo" loading="lazy" srcset="" width="91px" height="45px">
+          </div>
+          <div class="menu-container w-auto">
+            <ul class="menu-list flex items-center">
+              <li class="menu-item">
+                <a href="#" class="link active"><span class="link-title">Shop</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Men</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Women</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Combos</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Joggers</span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="search-container w-auto">
+            <form action="/" method="post" type="search">
+              <div class="input-wrapper relative">
+                <div class="search-icon absolute">
+                  <img src="/assets/search.svg" alt="Search icon" loading="lazy" srcset="">
+                </div>
+                <div class="form-input">
+                  <input type="text" name="q:search" id="search" placeholder="Search">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="header-links-container w-auto content-center flex">
+            <div class="icon-wrapper">
+              <span class="icon wishlist-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/heart.svg" alt="Wishlist icon" loading="lazy" srcset="">
+              </span>
+            </div>
+            <div class="icon-wrapper">
+              <span class="icon user-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/user.svg" alt="User account" loading="lazy" srcset="">
+              </span>
+            </div>
+            <div class="icon-wrapper">
+              <span class="icon cart-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/shopping-cart.svg" alt="Shopping cart" loading="lazy" srcset="">
+              </span>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="section-hero" class="flex section-hero w-full relative">
+        <section class="hero-container flex flex-wrap items-center justify-between w-full">
+          <div class="hero-slider swiper-container overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image-wrapper">
+                  <img src="./assets/hero-image.png" alt="hero image" srcset="" class="hero-image">
+                </div>
+                <div class="content-wrapper absolute text-left">
+                  <div class="pre-heading--wrapper py-5">
+                    <span class="pre-heading">T-shirt / Tops</span>
+                  </div>
+                  <div class="heading-wrapper py-5">
+                    <h2 class="heading">Summer<br>Value Pack</h2>
+                  </div>
+                  <div class="sub-heading--wrapper py-5">
+                    <span class="sub-heading">cool / colorful / comfy</span>
+                  </div>
+                  <div class="links-wrapper py-5">
+                    <a href="#" class="button button--primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper">
+                  <img src="./assets/hero-image.png" alt="hero image" srcset="" class="hero-image">
+                </div>
+                <div class="content-wrapper absolute text-left">
+                  <div class="pre-heading--wrapper py-5">
+                    <span class="pre-heading">T-shirt / Tops</span>
+                  </div>
+                  <div class="heading-wrapper py-5">
+                    <h2 class="heading">Summer<br>Value Pack</h2>
+                  </div>
+                  <div class="sub-heading--wrapper py-5">
+                    <span class="sub-heading">cool / colorful / comfy</span>
+                  </div>
+                  <div class="links-wrapper py-5">
+                    <a href="#" class="button button--primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image-wrapper">
+                  <img src="./assets/hero-image.png" alt="hero image" srcset="" class="hero-image">
+                </div>
+                <div class="content-wrapper absolute text-left">
+                  <div class="pre-heading--wrapper py-5">
+                    <span class="pre-heading">T-shirt / Tops</span>
+                  </div>
+                  <div class="heading-wrapper py-5">
+                    <h2 class="heading">Summer<br>Value Pack</h2>
+                  </div>
+                  <div class="sub-heading--wrapper py-5">
+                    <span class="sub-heading">cool / colorful / comfy</span>
+                  </div>
+                  <div class="links-wrapper py-5">
+                    <a href="#" class="button button--primary">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>        
+          </div>
+        </section>
+      </div>
+      <div id="section-banner" class="flex section-banner section-padding w-full relative text-white gap-7">
+        <div class="banner-wrapper w-1/2 banner-1 relative shadow-lg shadow-gray-600/50">
+          <div class="image-wrapper">
+            <img src="./assets/banner-image-1.png" alt="banner image 1">
+          </div>
+          <div class="content-wrapper absolute text-left">
+            <div class="pre-heading-wrapper py-6">
+              <span class="pre-heading">Low Price</span>
+            </div>
+            <div class="heading-wrapper py-0">
+              <h3 class="heading">High Coziness</h3>
+            </div>
+            <div class="sub-heading-wrapper py-2">
+              <span class="sub-heading">UPTO 50% OFF</span>
+            </div>
+            <div class="links-wrapper">
+              <a href="#" class="link">Explore Items</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-wrapper w-1/2 banner-2 relative shadow-lg shadow-gray-600/50">
+          <div class="image-wrapper">
+            <img src="./assets/banner-image-2.png" alt="banner image 2">
+          </div>
+          <div class="content-wrapper absolute text-left">
+            <div class="pre-heading-wrapper py-6">
+              <span class="pre-heading">Beyoung Presents</span>
+            </div>
+            <div class="heading-wrapper py-0">
+              <h3 class="heading">Breezy Summer<br>Style</h3>
+            </div>
+            <div class="sub-heading-wrapper py-2">
+              <span class="sub-heading">UPTO 50% OFF</span>
+            </div>
+            <div class="links-wrapper">
+              <a href="#" class="link">Explore Items</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

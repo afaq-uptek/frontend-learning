@@ -1,0 +1,51 @@
+.header-container {
+    gap: 76px;
+    max-width: 1238px;
+    margin: 0 auto;
+
+    .logo-container {
+        margin-right: 12px;
+    }
+
+    .menu-container {
+        .menu-list {
+            gap: 40px;
+            .menu-item {
+                font-family: 'Causten-SemiBold';
+                font-size: 22px;
+                font-weight: 600;
+                &:hover, .active {
+                    color: var(--color-text-title);
+                }
+
+            }
+        }
+    }
+    .search-container {
+        form {
+            .input-wrapper {
+                .search-icon {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left:20px
+                }
+                input {
+                    padding-inline-start: 52px;
+                    background-color: var(--color-field-background);
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    .header-links-container {
+        gap: 12px;
+        .icon-wrapper {
+            .icon {
+                width: 44px;
+                height: 44px;
+                background-color: var(--color-field-background);
+                border-radius: 8px;
+            }
+        }
+    }
+}
