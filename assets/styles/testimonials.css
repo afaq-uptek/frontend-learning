@@ -1,0 +1,43 @@
+.section-testimonials {
+    .testimonials-wrapper {
+        .testimonial-card {
+            border: 1px solid #BEBCBD;
+            padding: 23.19px;
+            .testimonial-header {
+                .user-card {
+                    .user-image {
+                        width: 58px;
+                        height: 58px;
+                    }
+                    .user-name {
+                        font-family: Core-Sans-C-Medium;
+                        font-size: 22px;
+                        letter-spacing: 1px;
+                        line-height: 1.2;
+                    }
+                }
+                .reviews-badge {
+                    height: 23px;
+                    display: inline-block;
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+            .testimonial-text {
+                font-family: Causten;
+                font-size: 14px;
+                line-height: 1.2;
+                letter-spacing: 2px;
+            }
+        }
+
+        .swiper-pagination {
+            bottom: -36px;
+
+            .swiper-pagination-bullet-active {
+                background-color: var(--color-text-title);
+            }
+        }
+    }
+}

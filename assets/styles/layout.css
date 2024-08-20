@@ -3,13 +3,25 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Causten-Light";
+  src: url("../fonts/Causten-Light.eot"),
+    url("../fonts/Causten-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Causten-Light.woff2") format("woff2"),
+    url("../fonts/Causten-Light.woff") format("woff"),
+    url("../fonts/Causten-Light.ttf") format("truetype");
+  /* font-weight: normal; */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Causten";
   src: url("../fonts/Causten-Regular.eot"),
     url("../fonts/Causten-Regular.eot?#iefix") format("embedded-opentype"),
     url("../fonts/Causten-Regular.woff2") format("woff2"),
     url("../fonts/Causten-Regular.woff") format("woff"),
     url("../fonts/Causten-Regular.ttf") format("truetype");
-  font-weight: normal;
+  /* font-weight: normal; */
   font-style: normal;
   font-display: swap;
 }
@@ -105,6 +117,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Core-Sans-C-Bold';
+  src: url('../fonts/Core-Sans-C-Bold.eot');
+  src: url('../fonts/Core-Sans-C-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Core-Sans-C-Bold.otf') format('otf'),
+    url('../fonts/Core-Sans-C-Bold.ttf') format('truetype'),
+    url('../fonts/Core-Sans-C-Bold.woff') format('woff');
+  font-display: swap;
+}
+
 :root {
   --color-text-regular: #333;
   --color-body: #ffffff;
@@ -180,26 +202,52 @@ input {
 
 button, .button {
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 24px;
   font-weight: 500;
   font-family: 'Causten-Bold';
-  background-color: var(--color-body);
   cursor: pointer;
   transition: border-color 0.25s linear, color 0.24s linear;
-  color: var(--color-text-title);
   display: inline-block;
   width: auto;
   text-align: center;
+  text-transform: capitalize;
 
-  &:hover {
-    border-color: #646cff;
-    color: var(--color-button);
-  }
   &.button--primary {
+    color: var(--color-text-title);
     min-width: 250px;
+    border: 1px solid transparent;
     min-height: 61px;
+    background-color: var(--color-body);
+    &:hover {
+      border-color: #646cff;
+      color: var(--color-button);
+    }
+    &.button-small {
+      font-size: 18px;
+      line-height: 1.2;
+      font-family: Causten-SemiBold;
+      min-width: auto;
+      min-height: auto;
+      padding-inline: 44px;
+      padding-block: 12px;
+    }
+  }
+
+  &.button--secondary {
+   background: transparent;
+   border: 1px solid currentColor;
+   border-radius: 4px;
+   padding-inline: 25px;
+   padding-block: 10px;
+   color: inherit;
+   font-family: Causten-Medium;
+   font-size: 12px;
+   min-width: 110px;
+
+   &:hover {
+    filter: invert(1);
+   }
   }
 }
 
@@ -213,10 +261,30 @@ button:focus-visible, .button:focus-visible {
   padding-block: 50px
 }
 
-@media (prefers-color-scheme: light) {
+.section-title {
+  font-size: 34px;
+  font-family: Core-Sans-C-Bold;
+  position: relative;
+  line-height: 31px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    display: block;
+    border-inline: 3px solid var(--color-button);
+    border-radius: 50px;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+/* @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #fff;
+    background-color: #333;
   }
   a:hover {
     color: #747bff;
@@ -224,4 +292,4 @@ button:focus-visible, .button:focus-visible {
   button, .button {
     background-color: #f9f9f9;
   }
-}
+} */

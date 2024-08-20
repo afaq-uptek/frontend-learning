@@ -1,0 +1,45 @@
+.section-brands {
+    .section-wrapper {
+        padding-inline: 123px;
+        background-color: var(--color-text-title);
+        padding-block-start: 44px;
+        padding-block-end: 60px;
+
+        .header-wrapper {
+            gap: 26px;
+            color: var(--color-body);
+            margin-bottom: 67px;
+
+            .heading {
+                font-family: Core-Sans-C-Heavy;
+                font-size: 50px;
+                line-height: 1.2;
+                letter-spacing: 0;
+            }
+
+            .text {
+                font-family: Causten;
+                font-size: 22px;
+                .text-bold {
+                    color: #FBD103;
+                    font-family: Causten-Bold;
+                }
+            }
+        }
+        .brands-wrapper {
+            .brand-card {
+                flex: 1;
+                min-width: calc((100% / 5) - 25px);
+                max-width: calc((100% / 2) - 25px);
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-block: 10px;
+                img {
+                    max-width: 75%;
+                }
+            }
+        }
+    }
+}

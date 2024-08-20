@@ -1,5 +1,8 @@
 .section-banner {
     .banner-wrapper {
+
+        position: relative;
+        transition: scale ease-in-out 0.3s;
         .content-wrapper {
             top: 50%;
             transform: translateY(-50%);
@@ -18,7 +21,16 @@
             .heading {
                 font-size: 34px;
                 font-family: Core-Sans-C-EBold;
+                min-height: 91px;
             }
+
+            .link {
+                font-family: Core-Sans-C-EBold;
+                font-size: 20px;
+            }
+        }
+        &:hover {
+            scale: 1.0125;
         }
     }
 }

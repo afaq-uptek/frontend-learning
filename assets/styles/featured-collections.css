@@ -1,0 +1,12 @@
+.section-featured-collections {
+    .cards-wrapper {
+        .content-wrapper {
+            .title {
+                font-family: Causten-Bold;
+                font-size: 17.88px;
+                line-height: 27.9px;
+                letter-spacing: -0.25px;
+            }
+        }
+    }
+}

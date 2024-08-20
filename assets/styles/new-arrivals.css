@@ -1,0 +1,23 @@
+.section-new-arrivals {
+    .text-wrapper {
+        font-family: Causten-Bold;
+        font-size: 20px;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        &::after {
+            content: none;
+        }
+        height: auto;
+        top: 57%;
+        transform: translateY(-50%);
+    }
+
+    .swiper-button-next {
+        right: -5px
+    }
+
+    .swiper-button-prev {
+        left: -5px
+    }
+}
