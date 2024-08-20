@@ -26,6 +26,7 @@
                 overflow: hidden;
                 text-overflow: ellipsis;
                 max-width: 166px;
+                margin-bottom: 5px;
             }
 
             .price {
