@@ -1,8 +1,20 @@
+@import '/assets/styles/loader.css';
+@import '/assets/styles/fonts.css';
 @import '/assets/styles/layout.css';
 @import '/assets/styles/swiper.min.css';
 @import '/assets/styles/header.css';
 @import '/assets/styles/hero.css';
 @import '/assets/styles/banner.css';
+@import '/assets/styles/new-arrivals.css';
+@import '/assets/styles/text-over-image-blocks.css';
+@import '/assets/styles/image-with-text.css';
+@import '/assets/styles/featured-collections.css';
+@import '/assets/styles/featured-collection.css';
+@import '/assets/styles/brands.css';
+@import '/assets/styles/testimonials.css';
+@import '/assets/styles/collection.css';
+@import '/assets/styles/product.css';
+@import '/assets/styles/footer.css';
 
 
 

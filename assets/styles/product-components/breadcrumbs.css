@@ -1,0 +1,32 @@
+.breadcrumbs {
+    &-inner {
+        position: relative;
+        .breadcrumbs-list {
+            list-style: none;
+            .breadcrumb-item {
+                position: relative;
+                line-height: 1.5;
+                font-family: Causten-Medium;
+                font-size: 18px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background: url(/assets/images/Icon-caret-right.svg);
+                    background-size: 6px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    right: -22px;
+                    width: 10px;
+                    height: 10px;
+                    top: 50%;
+                    transform: translate(0, -30%);
+                }
+                &:last-child {
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+}

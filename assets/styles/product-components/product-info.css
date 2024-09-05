@@ -1,0 +1,298 @@
+.product-info-wrapper {
+    .title {
+        font-family: Core-Sans-C-Bold;
+        font-size: 34px;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        color: var(--color-text-title);
+    }
+
+    .reviews-wrapper {
+        color: var(--color-text);
+    }
+
+    .variants-wrapper {
+        .variant-option-wrapper {
+            .option-label {
+                .label {
+                    font-family: Causten-SemiBold;
+                    font-size: 18px;
+                    line-height: 1.5;
+                }
+            }
+            &.variant-options-size {
+                .variant-options{
+                    &-inner {
+                        .option {
+                            label {
+                                width: 38px;
+                                height: 38px;
+                                display: inline-flex;
+                                border: 1.5px solid #BEBCBD;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #fff;
+                            }
+
+                            input:checked + label {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+            &.variant-options-colour {
+                .variant-options{
+                    &-inner {
+                        .option {
+                            label {
+                                width: 22px;
+                                height: 22px;
+                                display: inline-flex;
+                            }
+
+                            input:checked + label {
+                                &::before {
+                                    position: absolute;
+                                    content: '';
+                                    inset: -4px;
+                                    border-radius: 50px;
+                                    border: 1px solid var(--psuedo-active-color);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product-form {
+        .buttons-wrapper {
+            .button {
+                font-size: 18px;
+                min-height: 46px;
+                &.button--primary {
+                    min-width: 200px;
+                    font-family: Causten-SemiBold;
+                }
+                &.button--secondary {
+                    border-radius: 8px;
+                    font-family: Causten-Bold;
+                }
+                &.product-price-wrapper {
+                    pointer-events: none;
+                }
+                span {
+                    line-height: 1;
+                }
+            }
+        }
+    }
+
+    .seperator {
+        border-color: #BEBCBD;
+    }
+    .trust-badges {
+        &-wrapper {
+            .trust-badge {
+                .icon-wrapper {
+                    .icon {
+                        width: 44px;
+                        height: 44px;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #F6F6F6;
+                        color: var(--color-text-title);
+                    }
+                }
+                .text-wrapper {
+                    font-family: Causten-Medium;
+                    font-size: 18px;
+                    color: var(--color-text-title);
+                }
+            }
+        }
+    }
+    @media not all and (min-width: 1024px) {
+        grid-column: span 2;
+    }
+}
+.section-product-description {
+    .product-description-wrapper {
+        .product-tabs {
+            width: calc(53.07% - 45px);
+            .tab-headers-list-wrapper {
+                .list {
+                    .list-item {
+                        font-family: Causten-Medium;
+                        font-size: 18px;
+                        color: var(--color-text-title);
+                        position: relative;
+                        &::after {
+                            content: '';
+                            display: block;
+                            width: 0;
+                            height: 1px;
+                            background-color: #000;
+                            position: relative;
+                            transition: width ease-in-out 250ms;
+                            margin-top: 22px;
+                        }
+                        &.active {
+                            &::after {
+                                width: 43px;
+                            }
+                        }
+                        .text-wrapper {
+                            display: flex;
+                            align-items: center;
+
+                            .count {
+                                width: 20px;
+                                height: 20px;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #fff;
+                                border-radius: 4px;
+                                margin-left: 15px;
+                                font-size: 10px;
+                                &-comment {
+                                    background-color: var(--color-button);
+                                }
+                                &-qa {
+                                    background-color: var(--color-text-title)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tabs-content-wrapper {
+                .tab-content {
+                    .description {
+                        font-family: Causten;
+                        font-size: 16px;
+                        line-height: 25px;
+                        letter-spacing: 0.2px;
+                        margin-bottom: 30px;
+                    }
+
+                    .product-details {
+                        background-color: #f6f6f6;
+                        border-radius: 12px;
+                        padding-block: 7px;
+
+                        &-inner {
+                            --gap: 1rem;
+                            --line-offset: calc(var(--gap) / 2);
+                            --line-thickness: 1px;
+                            --line-color: #BEBCBD;
+                            overflow: hidden;
+                            gap: var(--gap);
+                            /* row-gap: 2rem; */
+
+                            .detail-item {
+                                padding-inline-start: 46px;
+                                font-size: 16px;
+                                letter-spacing: 0.2px;
+                                position: relative;
+    
+                                &::before, 
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    background-color: var(--line-color);
+                                    z-index: 1;
+                                }
+    
+                                &::after {
+                                    inline-size: 100vw;
+                                    block-size: var(--line-thickness);
+                                    inset-inline-start: 0;
+                                    inset-block-start: calc(var(--line-offset) * -1);
+                                }
+
+                                &::before {
+                                    inline-size: var(--line-thickness);
+                                    block-size: 100vh;
+                                    inset-block-start: 0;
+                                    inset-inline-start: calc(var(--line-offset) * -1);
+                                }
+
+                                &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                                    padding-top: 17px;
+                                    padding-bottom: 13px;
+                                } 
+
+                                &:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3) {
+                                    padding-bottom: 17px;
+                                    padding-top: 13px;
+                                }
+
+                                .title {
+                                    font-family: Causten;
+                                    color: #807D7E
+                                }
+                                .details {
+                                    font-family: Causten-Medium;
+                                    color: var(--color-text-title);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media not all and (min-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .product-video-media {
+            width: calc(46.93% - 45px);
+            display: flex;
+            video {
+                /* background-color:rgba(190, 188, 189, 0.5); */
+                border-radius: 12px;
+                overflow: hidden;
+                height: 100%;
+                width: auto;
+                max-width: none;
+            }
+            .custom-controls {
+                .play-pause-button {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #F6F6F6;
+                    position: absolute;
+                    width: 53px;
+                    height: 53px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    transition: opacity ease-out 250ms;
+                }
+                .time-label {
+                    right: 27px;
+                    top: 27px;
+                    color: var(--color-body);
+                    position: absolute;
+                    font-family: Causten-Medium;
+                    font-size: 18px;
+                }
+                &:hover {
+                .play-pause-button {
+                    opacity: 1;
+                }
+                }
+            }
+
+            @media not all and (min-width: 1024px) {
+                width: 100%;
+            }
+        }
+    }
+}

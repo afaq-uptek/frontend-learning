@@ -1,0 +1,24 @@
+.section-featured-collections {
+    .cards-wrapper {
+        .content-wrapper {
+            cursor: pointer;
+            .title {
+                font-family: Causten-Bold;
+                font-size: 17.88px;
+                line-height: 27.9px;
+                letter-spacing: -0.25px;
+            }
+            .icon {
+                position: relative;
+                transition: left 550ms cubic-bezier(0.19, 1, 0.22, 1);
+                left: 0;
+            }
+
+            &:hover {
+                .icon {
+                    left: -5%
+                }
+            }
+        }
+    }
+}

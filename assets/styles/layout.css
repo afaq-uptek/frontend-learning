@@ -2,109 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Causten";
-  src: url("../fonts/Causten-Regular.eot"),
-    url("../fonts/Causten-Regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Causten-Regular.woff2") format("woff2"),
-    url("../fonts/Causten-Regular.woff") format("woff"),
-    url("../fonts/Causten-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Causten-Medium';
-  src: url('../fonts/Causten-Medium.eot');
-  src: url('../fonts/Causten-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Causten-Medium.otf') format('otf'),
-    url('../fonts/Causten-Medium.ttf') format('truetype'),
-    url('../fonts/Causten-Medium.woff') format('woff'),
-    url('../fonts/Causten-Medium.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Causten-SemiBold';
-  src: url('../fonts/Causten-SemiBold.eot');
-  src: url('../fonts/Causten-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Causten-SemiBold.otf') format('otf'),
-    url('../fonts/Causten-SemiBold.ttf') format('truetype'),
-    url('../fonts/Causten-SemiBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Causten-Bold';
-  src: url('../fonts/Causten-Bold.eot');
-  src: url('../fonts/Causten-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Causten-Bold.otf') format('otf'),
-    url('../fonts/Causten-Bold.ttf') format('truetype'),
-    url('../fonts/Causten-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Core-Sans-C';
-  src: url('../fonts/Core-Sans-C.eot');
-  src: url('../fonts/Core-Sans-C.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Core-Sans-C.otf') format('otf'),
-    url('../fonts/Core-Sans-C.ttf') format('truetype'),
-    url('../fonts/Core-Sans-C.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Core-Sans-C-Heavy';
-  src: url('../fonts/Core-Sans-C-Heavy.eot');
-  src: url('../fonts/Core-Sans-C-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Core-Sans-C-Heavy.otf') format('otf'),
-    url('../fonts/Core-Sans-C-Heavy.ttf') format('truetype'),
-    url('../fonts/Core-Sans-C-Heavy.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/Montserrat.eot');
-  src: url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Montserrat.otf') format('otf'),
-    url('../fonts/Montserrat.ttf') format('truetype'),
-    url('../fonts/Montserrat.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Core-Sans-C-EBold';
-  src: url('../fonts/Core-Sans-C-EBold.eot');
-  src: url('../fonts/Core-Sans-C-EBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Core-Sans-C-EBold.otf') format('otf'),
-    url('../fonts/Core-Sans-C-EBold.ttf') format('truetype'),
-    url('../fonts/Core-Sans-C-EBold.woff') format('woff');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Core-Sans-C-Medium';
-  src: url('../fonts/Core-Sans-C-Medium.eot');
-  src: url('../fonts/Core-Sans-C-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Core-Sans-C-Medium.otf') format('otf'),
-    url('../fonts/Core-Sans-C-Medium.ttf') format('truetype'),
-    url('../fonts/Core-Sans-C-Medium.woff') format('woff');
-  font-display: swap;
-}
-
 :root {
   --color-text-regular: #333;
   --color-body: #ffffff;
@@ -135,6 +32,7 @@ a {
   font-weight: 500;
   color: var(--color-text);
   text-decoration: inherit;
+  transition: color 550ms cubic-bezier(0.19, 1, 0.22, 1);
 
   &:hover {
     color: var(--color-text-title);
@@ -180,26 +78,104 @@ input {
 
 button, .button {
   border-radius: 8px;
-  border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 24px;
   font-weight: 500;
   font-family: 'Causten-Bold';
-  background-color: var(--color-body);
   cursor: pointer;
   transition: border-color 0.25s linear, color 0.24s linear;
-  color: var(--color-text-title);
-  display: inline-block;
+  display: inline-flex;
   width: auto;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
 
-  &:hover {
-    border-color: #646cff;
-    color: var(--color-button);
-  }
   &.button--primary {
+    color: var(--color-text-title);
     min-width: 250px;
+    border: 1px solid transparent;
     min-height: 61px;
+    background-color: var(--color-body);
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      background-color: var(--color-button);
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: .2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: 2;
+    }
+
+    &:hover {
+      border-color: var(--color-button);
+      color: var(--color-button);
+      &:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+    &.color--purple {
+      background-color: var(--color-button);
+      color: var(--color-body);
+      &:hover {
+        &::after {
+          background-color: var(--color-body);
+        }
+      }
+    }
+    &.button-small {
+      font-size: 18px;
+      line-height: 1.2;
+      font-family: Causten-SemiBold;
+      min-width: auto;
+      min-height: auto;
+      padding-inline: 44px;
+      padding-block: 12px;
+    }
+  }
+
+  &.button--secondary {
+   overflow: hidden;
+   background: transparent;
+   border: 1px solid currentColor;
+   border-radius: 4px;
+   padding-inline: 25px;
+   padding-block: 10px;
+   color: inherit;
+   font-family: Causten-Medium;
+   font-size: 12px;
+   min-width: 110px;
+  position: relative;
+  
+   &:after {
+     background-color: #fff;
+     content: "";
+     height: 155px;
+     left: -75px;
+     opacity: .2;
+     position: absolute;
+     top: -50px;
+     transform: rotate(35deg);
+     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+     width: 50px;
+     z-index: -10;
+   }
+
+   &:hover {
+    filter: invert(1);
+    &:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+   }
   }
 }
 
@@ -210,13 +186,48 @@ button:focus-visible, .button:focus-visible {
 
 .section-padding {
   padding-inline: 104px;
-  padding-block: 50px
+  padding-block: 50px;
+
+  @media not all and (min-width: 1280px) {
+    padding-inline: 80px;
+    padding-block: 60px
+  }
+
+  @media not all and (min-width: 1024px) {
+    padding-inline: 60px;
+    padding-block: 40px
+  }
+  
+  @media not all and (min-width: 768px) {
+    padding-inline: 25px;
+    padding-block: 30px
+  }
 }
 
-@media (prefers-color-scheme: light) {
+.section-title {
+  font-size: 34px;
+  font-family: Core-Sans-C-Bold;
+  position: relative;
+  line-height: 31px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    display: block;
+    border-inline: 3px solid var(--color-button);
+    border-radius: 50px;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}
+/* @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #fff;
+    background-color: #333;
   }
   a:hover {
     color: #747bff;
@@ -224,4 +235,4 @@ button:focus-visible, .button:focus-visible {
   button, .button {
     background-color: #f9f9f9;
   }
-}
+} */

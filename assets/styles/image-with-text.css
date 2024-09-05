@@ -1,0 +1,44 @@
+.section-text-with-image {
+    .text-content-wrapper {
+        background-image: url(/assets/images/image-with-text-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 0;
+        }
+        >* {
+            z-index: 1;
+        }
+
+        .heading {
+            font-family: Core-Sans-C-Heavy;
+            font-size: 34px;
+            line-height: 50px;
+            letter-spacing: 0.21px;
+        }
+
+        .text-wrapper {
+            font-family: Causten-Light;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        @media not all and (min-width: 1024px) {
+            .heading {
+                font-size: 24px;
+                line-height: 1.2;
+            }
+            .text-wrapper {
+                font-size: 18px;
+                margin-bottom: 0
+            }
+        }
+    }
+}

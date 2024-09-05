@@ -1,0 +1,72 @@
+.section-brands {
+    .section-wrapper {
+        padding-inline: 123px;
+        background-color: var(--color-text-title);
+        padding-block-start: 44px;
+        padding-block-end: 60px;
+
+        @media not all and (min-width: 768px) {
+            padding-inline: 25px;
+        }
+
+        @media not all and (min-width: 1024px) {
+            padding-inline: 40px;
+        }
+
+        .header-wrapper {
+            gap: 26px;
+            color: var(--color-body);
+            margin-bottom: 67px;
+
+            .heading {
+                font-family: Core-Sans-C-Heavy;
+                font-size: 50px;
+                line-height: 1.2;
+                letter-spacing: 0;
+            }
+
+            .text {
+                font-family: Causten;
+                font-size: 22px;
+                .text-bold {
+                    color: #FBD103;
+                    font-family: Causten-Bold;
+                }
+            }
+
+            @media not all and (min-width: 1024px) {
+                .heading {
+                    font-size: 44px;
+                }
+                .text {
+                    font-size: 20px;
+                }
+            }
+
+            @media not all and (min-width: 768px) {
+                .heading {
+                    font-size: 36px;
+                }
+                .text {
+                    font-size: 18px;
+                }
+            }
+    
+        }
+        .brands-wrapper {
+            .brand-card {
+                flex: 1;
+                min-width: calc((100% / 5) - 25px);
+                max-width: calc((100% / 2) - 25px);
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-block: 10px;
+                img {
+                    max-width: 75%;
+                }
+            }
+        }
+    }
+}

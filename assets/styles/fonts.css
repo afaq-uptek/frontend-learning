@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Causten-Light";
+    src: url("../fonts/Causten-Light.eot"),
+      url("../fonts/Causten-Light.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Causten-Light.woff2") format("woff2"),
+      url("../fonts/Causten-Light.woff") format("woff"),
+      url("../fonts/Causten-Light.ttf") format("truetype");
+    /* font-weight: normal; */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Causten";
+    src: url("../fonts/Causten-Regular.eot"),
+      url("../fonts/Causten-Regular.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/Causten-Regular.woff2") format("woff2"),
+      url("../fonts/Causten-Regular.woff") format("woff"),
+      url("../fonts/Causten-Regular.ttf") format("truetype");
+    /* font-weight: normal; */
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Causten-Medium';
+    src: url('../fonts/Causten-Medium.eot');
+    src: url('../fonts/Causten-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Causten-Medium.otf') format('otf'),
+      url('../fonts/Causten-Medium.ttf') format('truetype'),
+      url('../fonts/Causten-Medium.woff') format('woff'),
+      url('../fonts/Causten-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Causten-SemiBold';
+    src: url('../fonts/Causten-SemiBold.eot');
+    src: url('../fonts/Causten-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Causten-SemiBold.otf') format('otf'),
+      url('../fonts/Causten-SemiBold.ttf') format('truetype'),
+      url('../fonts/Causten-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Causten-Bold';
+    src: url('../fonts/Causten-Bold.eot');
+    src: url('../fonts/Causten-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Causten-Bold.otf') format('otf'),
+      url('../fonts/Causten-Bold.ttf') format('truetype'),
+      url('../fonts/Causten-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Core-Sans-C';
+    src: url('../fonts/Core-Sans-C.eot');
+    src: url('../fonts/Core-Sans-C.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Core-Sans-C.otf') format('otf'),
+      url('../fonts/Core-Sans-C.ttf') format('truetype'),
+      url('../fonts/Core-Sans-C.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Core-Sans-C-Heavy';
+    src: url('../fonts/Core-Sans-C-Heavy.eot');
+    src: url('../fonts/Core-Sans-C-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Core-Sans-C-Heavy.otf') format('otf'),
+      url('../fonts/Core-Sans-C-Heavy.ttf') format('truetype'),
+      url('../fonts/Core-Sans-C-Heavy.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat.eot');
+    src: url('../fonts/Montserrat.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Montserrat.otf') format('otf'),
+      url('../fonts/Montserrat.ttf') format('truetype'),
+      url('../fonts/Montserrat.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Core-Sans-C-EBold';
+    src: url('../fonts/Core-Sans-C-EBold.eot');
+    src: url('../fonts/Core-Sans-C-EBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Core-Sans-C-EBold.otf') format('otf'),
+      url('../fonts/Core-Sans-C-EBold.ttf') format('truetype'),
+      url('../fonts/Core-Sans-C-EBold.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Core-Sans-C-Medium';
+    src: url('../fonts/Core-Sans-C-Medium.eot');
+    src: url('../fonts/Core-Sans-C-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Core-Sans-C-Medium.otf') format('otf'),
+      url('../fonts/Core-Sans-C-Medium.ttf') format('truetype'),
+      url('../fonts/Core-Sans-C-Medium.woff') format('woff');
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Core-Sans-C-Bold';
+    src: url('../fonts/Core-Sans-C-Bold.eot');
+    src: url('../fonts/Core-Sans-C-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Core-Sans-C-Bold.otf') format('otf'),
+      url('../fonts/Core-Sans-C-Bold.ttf') format('truetype'),
+      url('../fonts/Core-Sans-C-Bold.woff') format('woff');
+    font-display: swap;
+  }

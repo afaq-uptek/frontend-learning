@@ -1,0 +1,151 @@
+.section-collection {
+    .collection-wrapper {
+        .filter-wrapper {
+            border-block-end: 1px solid #BEBCBD;
+            border-inline: 1px solid #BEBCBD;
+            flex: 1;
+            align-self: flex-start;
+            .filter-header {
+                border-block-end: 1px solid #BEBCBD;
+                .title {
+                    font-family: Causten-SemiBold;
+                    font-size: 22px;
+                    color: #807d7e;
+                }
+            }
+            .filter-blocks {
+                .filter-block {
+                    label, .label {
+                        cursor: pointer;
+                    }
+                    .block-header {
+                        border-top: 1px solid #BEBCBD;
+                        .title {
+                            font-family: Causten-SemiBold;
+                            font-size: 22px;
+                            line-height: 1.5;
+                            letter-spacing: 0;
+                            color: #807d7e;
+
+                            .icon {
+                                position: relative;
+                                transition: transform 0.2s ease-out;
+                            }
+
+                        }
+                        &.active {
+                            .title {
+                                .icon {
+                                    transform: rotateZ(90deg);
+                                }
+                            }
+                        }
+                    }
+                    &.accordion {
+                        .accordion-item {
+                            .accordion-item-body {
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out, margin 0.2s ease-out, padding 0.2s ease-out;
+                                &.expanded {
+                                    border-top: 1px solid #BEBCBD;
+                                }
+                            }
+                        }
+                    }
+                    .color-wrapper {
+                        label {
+                            display: inline-block;
+                            position: relative;
+                            width: 36.73px;
+                            height: 36.73px;
+                            box-shadow: 0 0 10px 2px rgba(0,0,0, 0.1);
+                            &:before {
+                                content: '';
+                                display: inline-block;
+                                position: absolute;
+                                inset: -3px;
+                                border: 1px solid transparent;
+                                transition: border-color ease-out 250ms;
+                                border-radius: 12px;
+                            }
+                        }
+                        input:checked + label {
+                            &::before {
+                                border-color: var(--pseudo-color);
+                            }
+                        }
+                        span.label {
+                            font-family: Causten-SemiBold;
+                            font-size: 14px;
+                            color: #8A8989;
+                            letter-spacing: 0;
+                            line-height: 1.5;
+
+                        }
+                    }
+                    .size-wrapper {
+                        /* line-height: 32px; */
+                        label {
+                            display: flex;
+                            width: 71px;
+                            height: 32px;
+                            border: 1px solid #BEBCBD;
+                            font-family: Causten-SemiBold;
+                            font-size: 14px;
+                            color: #8A8989;
+                            justify-content: center ;
+                            align-items: center;
+                            transition: background-color ease-out 250ms;
+                            span.label {
+                                color: #3C4242;
+                            }
+                        }
+                        input:checked + label {
+                            background-color: var(--color-button);
+                            span.label {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+                }
+                .accordions-wrapper {
+                    .accordion {
+                        .accordion-item {
+                            .accordion-item-header {
+                                font-family: Causten-SemiBold;
+                                font-size: 16px;
+                                line-height: 1.5;
+                                letter-spacing: 0;
+                                color: #8A8989;
+                                .icon {
+                                    position: relative;
+                                    transition: transform 0.2s ease-out;
+                                }
+                                &.active {
+                                    .icon {
+                                        transform: rotateZ(90deg);
+                                    }
+                                }
+                            }
+                            .accordion-item-body {
+                                max-height: 0;
+                                overflow: hidden;
+                                transition: max-height 0.2s ease-out, margin 0.2s ease-out, padding 0.2s ease-out;
+                            }
+                        }
+                    }
+                }
+            }
+            @media not all and (min-width: 1024px) {
+                border-block-start: 1px solid #BEBCBD;
+                .tab-accordion-item-body {
+                    max-height: 0;
+                    overflow: hidden auto;
+                    transition: max-height 0.2s ease-out, margin 0.2s ease-out, padding 0.2s ease-out;
+                }
+            }
+
+        }
+    }
+}

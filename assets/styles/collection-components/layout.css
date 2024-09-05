@@ -1,0 +1,16 @@
+.section-collection {
+    .collection-wrapper {
+        .filter-wrapper {
+            width: calc(26% - 25px);
+            @media not all and (min-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .collection-grid-wrapper {
+            width: calc(74% - 25px);
+            @media not all and (min-width: 1024px) {
+                width: 100%;
+            }
+        }
+    }
+}

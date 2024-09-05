@@ -1,0 +1,153 @@
+.section-footer {
+    background-color: var(--color-text-title);
+    margin-top: 100px;
+    .footer-section-padding {
+        padding-inline: 110px;
+        padding-block: 60px;
+
+        @media all and (max-width: 1280px) {
+            padding-inline: 60px;
+            padding-block: 70px;
+        }
+
+        @media all and (max-width: 1024px) {
+            padding-inline: 50px;
+            padding-block: 50px;
+        }
+
+        @media all and (max-width: 768px) {
+            padding-inline: 25px;
+            padding-block: 40px;
+        }
+    }
+    .footer-top {
+        .footer-block {
+            &.menu {
+                .menu-title {
+                    .title {
+                        font-family: Causten-Bold;
+                        font-size: 28.58px;
+                        line-height: 62px;
+                        letter-spacing: 0;
+                    }
+                }
+                .list {
+                    .list-item {
+                        font-family: Causten-Medium;
+                        font-size: 18px;
+                        &:not(:last-child) {
+                            margin-bottom: 5px;
+                        }
+                        a {
+                            position: absolute;
+                            inset: 0;
+                            cursor: pointer;
+                            z-index: 1;
+                        }
+                        &:not(:has(>address)) {
+                            &:hover {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-social {
+        .footer-block{
+            &.social-wrapper {
+                .list {
+                    .list-item {
+                        .icon {
+                            display: inline-flex;
+                            width: 37px;
+                            height: 37px;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: var(--color-body);
+                            color: var(--color-text-title);
+                        }
+                    }
+                }
+            }
+            &.app-details {
+                .block-title {
+                    .title {
+                        font-family: Causten-Bold;
+                        font-size: 28.58px;
+                        line-height: 62px;
+                        letter-spacing: 0;
+                        margin-bottom: 20px
+                    }
+                }
+                .details-wrapper {
+                    .store-details {
+                        .store-link-wrapper {
+                            box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+                            img {   
+                                max-width: 154px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom {
+        .accordions-wrapper {
+            .accordion {
+                .accordion-item {
+                    border-block: 1px solid #BEBCBD;
+                    .accordion-item-header {
+                        font-family: Causten-Bold;
+                        font-size: 28.58px;
+                        line-height: normal;
+                        letter-spacing: 0;
+                        cursor: pointer;
+
+                        .icon {
+                            transition: transform linear 0.25s;
+                        }
+                        &.active {
+                            .icon {
+                                transform: rotateX(180deg);
+                            }
+                        }
+                    }
+                    .accordion-item-body {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out, margin 0.2s ease-out, padding 0.2s ease-out;
+                        .accordion-item-body-content {
+                            padding: 1rem;
+                            line-height: 1.5rem;
+
+                            .list {
+                                .list-item {
+                                    font-family: Causten-Medium;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+
+                        &.expanded {
+                            margin-top: 1.75rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        margin-top: 37px;
+        .copyright-wrapper {
+            .copyright-text {
+                font-family: Causten-Bold;
+                font-size: 18px;
+                letter-spacing: 0;
+                line-height: 36px;
+            }
+        }
+    }
+}
