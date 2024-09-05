@@ -1,3 +1,5 @@
+@import '/assets/styles/loader.css';
+@import '/assets/styles/fonts.css';
 @import '/assets/styles/layout.css';
 @import '/assets/styles/swiper.min.css';
 @import '/assets/styles/header.css';
@@ -10,6 +12,9 @@
 @import '/assets/styles/featured-collection.css';
 @import '/assets/styles/brands.css';
 @import '/assets/styles/testimonials.css';
+@import '/assets/styles/collection.css';
+@import '/assets/styles/product.css';
+@import '/assets/styles/footer.css';
 
 
 

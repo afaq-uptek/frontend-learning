@@ -1,6 +1,7 @@
 .section-testimonials {
     .testimonials-wrapper {
         .testimonial-card {
+            cursor: pointer;
             border: 1px solid #BEBCBD;
             padding: 23.19px;
             .testimonial-header {

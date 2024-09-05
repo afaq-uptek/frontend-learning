@@ -11,6 +11,7 @@
             .pre-heading {
                 font-family: Montserrat;
                 font-weight: 800;
+                font-size: 18px;
             }
 
             .sub-heading {
@@ -31,6 +32,23 @@
         }
         &:hover {
             scale: 1.0125;
+        }
+
+        @media not all and (min-width: 1024px) {
+            .content-wrapper {
+                .pre-heading {
+                    line-height: 1;
+                    font-size: 16px;
+                }
+                .heading {
+                    font-size: 26px;
+                    line-height: 1.5;
+                }
+                .sub-heading {
+                    font-size: 22px;
+                    line-height: 1;
+                }
+            }
         }
     }
 }

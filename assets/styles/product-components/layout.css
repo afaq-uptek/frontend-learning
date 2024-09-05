@@ -1,0 +1,14 @@
+.template-product {
+    .section-padding {
+        padding-inline: 101px;
+        @media not all and (min-width: 1024px) {
+            padding-inline: 50px
+        }
+        @media not all and (min-width: 768px) {
+            padding-inline: 25px
+        }
+    }
+    .section-featured-collections {
+        padding-bottom: 0
+    }
+}

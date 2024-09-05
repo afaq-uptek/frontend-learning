@@ -1,0 +1,137 @@
+.section-collection-details {
+    .details-wrapper {
+        &--inner {
+            display: -webkit-box;
+            -webkit-line-clamp: 12;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: -webkit-line-clamp 0.3s ease;
+            &.expanded {
+                -webkit-line-clamp: unset;
+            }
+
+            h3 {
+                font-family: Core-Sans-C-Bold;
+                font-size: 20px;
+                color: var(--color-text);
+                letter-spacing: .2px;
+                line-height: 33.5px;
+                margin-bottom: 25px;
+            }
+            p {
+                font-family: Causten;
+                font-size: 20px;
+                line-height: 33.5px;
+                letter-spacing: 0.2px;
+                color: var(--color-text);
+                margin-bottom: 20px;
+            }
+        }
+        a.details-trigger {
+            font-family: Core-Sans-C-Bold;
+            font-size: 20px;
+            line-height: 33.5px;
+            letter-spacing: 0.2px;
+            color: var(--color-text);
+        }
+    }
+}
+.section-pricing-table {
+    table {
+        background-color: #F6F6F6;
+        border-radius: 12px;
+        width: 100%;
+        thead {
+            border-bottom: 1px solid #BEBCBD;
+            th{
+                font-family: Core-Sans-C-Bold;
+                font-size: 24px;
+                color: #3c4242;
+                letter-spacing: 0.2px;
+                line-height: 33.5px;
+                padding-block: 50px;
+
+                &:first-child {
+                    width: 80%;
+                    padding-left: 84px;
+                }
+                &:last-child {
+                    padding-left: 70px;
+                    border-left: 1px solid #BEBCBD;
+                }
+            }
+        }
+        tbody {
+            tr {
+                padding-inline-start: 84px;
+                td {
+                    font-family: Causten;
+                    font-size: 24px;
+                    letter-spacing: 0.2px;
+                    line-height: 16px;
+                    color: var(--color-text);
+                    padding-block: 25px;
+
+                    &:first-child {
+                        padding-inline-start: 84px;
+                    }
+                    &:last-child {
+                        padding-left: 70px;
+                        border-left: 1px solid #BEBCBD;
+                    }
+                }
+                &:first-child {
+                    td {
+                        padding-block-start: 50px;
+                    }
+                }
+                &:last-child {
+                    td {
+                        padding-block-end: 50px;
+                    }
+                }
+            }
+        }
+        @media not all and (min-width: 768px) {
+            thead {
+                th {
+                    &:first-child {
+                        width: 80%;
+                        padding-left: 25px;
+                    }
+                    &:last-child {
+                        padding-left: 25px;
+                        border-left: 1px solid #BEBCBD;
+                        text-align: center;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    padding-inline-start: 25px;
+                    &:first-child {
+                        td {
+                            padding-block-start: 25px;
+                        }
+                    }
+                    &:last-child {
+                        td {
+                            padding-block-end: 25px;
+                        }
+                    }
+                    td {
+                        padding-block: 20px;
+                        &:first-child {
+                            padding-inline-start: 40px;
+                        }
+                        &:last-child {
+                            padding-left: 10px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

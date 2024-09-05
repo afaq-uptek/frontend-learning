@@ -5,6 +5,14 @@
         padding-block-start: 44px;
         padding-block-end: 60px;
 
+        @media not all and (min-width: 768px) {
+            padding-inline: 25px;
+        }
+
+        @media not all and (min-width: 1024px) {
+            padding-inline: 40px;
+        }
+
         .header-wrapper {
             gap: 26px;
             color: var(--color-body);
@@ -25,6 +33,25 @@
                     font-family: Causten-Bold;
                 }
             }
+
+            @media not all and (min-width: 1024px) {
+                .heading {
+                    font-size: 44px;
+                }
+                .text {
+                    font-size: 20px;
+                }
+            }
+
+            @media not all and (min-width: 768px) {
+                .heading {
+                    font-size: 36px;
+                }
+                .text {
+                    font-size: 18px;
+                }
+            }
+    
         }
         .brands-wrapper {
             .brand-card {

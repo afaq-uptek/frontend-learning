@@ -1,0 +1,63 @@
+.collection-grid-wrapper {
+    .grid-header-wrapper {
+        .heading-wrapper {
+            .title {
+                font-family: Causten-SemiBold;
+                font-size: 22px;
+                letter-spacing: 0;
+                line-height: 1.5;
+                color: #3F4646;
+            }
+        }
+        .header-filter-wrapper {
+            label {
+                font-family: Causten-SemiBold;
+                font-size: 22px;
+                letter-spacing: 0;
+                line-height: 1.5;
+                color: #3F4646
+            }
+
+            input:checked + label {
+                color: var(--color-button);
+            }
+        }
+    }
+}
+.product-card {
+    .image-wrapper {
+        .wishlist-wrapper {
+            top: 26px;
+            right: 20px;
+            z-index: 1;
+            .wishlist {
+                display: inline-flex;
+                width: 32px;
+                height: 32px;
+                border-radius: 50px;
+                background-color: var(--color-body);
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .content-wrapper {
+        .title {
+            font-family: Causten-SemiBold;
+            font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 166px;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            background-color: var(--color-field-background);
+            font-family: Causten-Bold;
+            font-size: 14px;
+        }
+    }
+}
