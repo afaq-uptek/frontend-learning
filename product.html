@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script>
+      window.addEventListener('load', function () {
+        const loader = document.getElementById('loader');
+        const content = document.getElementById('main');
+        
+        loader.style.display = 'none';
+        content.removeAttribute('style');
+      });
+    </script>
+</head>
+<body class="template-product">
+    <div id="loader">
+        <san class="spinner"></san>
+    </div>
+    <div id="main" class="container container-2xl" style="display: none;">
+        <div id="sideMenu" class="side-menu">
+            <a href="#" class="close-btn">×</a>
+            <a href="#">Shop</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Combos</a>
+            <a href="#">Joggers</a>
+        </div>
+        <div id="section-header" class="flex section-header w-full">
+        <section class="header-container py-8 flex max-xl:px-[25px] items-center w-full justify-between max-lg:inline-flex gap-18 max-lg:gap-8 max-xl:gap-10 max-lg:px-5">
+            <span class="menu-btn lg:hidden">☰</span>
+            <div class="logo-container flex gap-2.5 items-center w-auto">
+            <a href="/">
+                <img src="/assets/images/Logo.png" alt="Site logo" class="logo" loading="lazy" srcset="" width="91px" height="45px">
+            </a>
+            </div>
+            <div class="menu-container max-md:hidden w-auto">
+            <ul class="menu-list flex items-center">
+                <li class="menu-item">
+                <a href="#" class="link active"><span class="link-title">Shop</span></a>
+                </li>
+                <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Men</span></a>
+                </li>
+                <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Women</span></a>
+                </li>
+                <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Combos</span></a>
+                </li>
+                <li class="menu-item">
+                <a href="#" class="link "><span class="link-title">Joggers</span></a>
+                </li>
+            </ul>
+            </div>
+            <div class="search-container max-xl:hidden w-auto">
+            <form action="/" method="post" type="search">
+                <div class="input-wrapper relative">
+                <div class="search-icon absolute">
+                    <img src="/assets/images/search.svg" alt="Search icon" loading="lazy" srcset="">
+                </div>
+                <div class="form-input">
+                    <input type="text" name="q:search" id="search" placeholder="Search">
+                </div>
+                </div>
+            </form>
+            </div>
+            <div class="header-links-container w-auto content-center flex">
+
+            <div class="icon-wrapper xl:hidden relative">
+                <a href="#" class="link absolute inset-0"></a>
+                <span class="icon search-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/images/search.svg" alt="search icon" loading="lazy" srcset="">
+                </span>
+            </div>
+            <div class="icon-wrapper max-lg:hidden relative">
+                <a href="#" class="link absolute inset-0"></a>
+                <span class="icon wishlist-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/images/heart.svg" alt="Wishlist icon" loading="lazy" srcset="">
+                </span>
+            </div>
+            <div class="icon-wrapper max-lg:hidden relative">
+                <a href="#" class="link absolute inset-0"></a>
+                <span class="icon user-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/images/user.svg" alt="User account" loading="lazy" srcset="">
+                </span>
+            </div>
+            <div class="icon-wrapper relative">
+                <a href="#" class="link absolute inset-0"></a>
+                <span class="icon cart-icon px-2 py-3 flex content-center justify-center">
+                <img src="/assets/images/shopping-cart.svg" alt="Shopping cart" loading="lazy" srcset="">
+                </span>
+            </div>
+            </div>
+        </section>
+        </div>
+        <div id="product" class="section-product section-padding pt-0 w-full relative">
+            <div class="breadcrumbs breadcrumbs-mobile py-5 lg:hidden">
+                <div class="breadcrumbs-inner">
+                    <ul class="breadcrumbs-list list-none flex gap-[35px]">
+                        <li class="breadcrumb-item">Shop</li>
+                        <li class="breadcrumb-item">Women</li>
+                        <li class="breadcrumb-item">Top</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section-product--inner flex w-full justify-end">
+                <div class="product-grid grid w-full lg:gap-[71px]">
+                    <div class="product-gallery-wrapper">
+                        <div class="product-gallery-wrapper--inner flex gap-[37.78px] max-lg:gap-4 relative">
+                            <div class="gallery-thumbs-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper rounded-[9.07px] overflow-hidden">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper rounded-[9.07px] overflow-hidden">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper rounded-[9.07px] overflow-hidden">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper rounded-[9.07px] overflow-hidden">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper rounded-[9.07px] overflow-hidden">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Navigation -->
+                                 <div class="nav-wrapper">
+                                     <div class="swiper-button-next">
+                                        <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.814 1.75049L9.30837 9.14195C9.86133 9.68731 10.7578 9.68731 11.3108 9.14195L18.8052 1.75049" stroke="currentColor" stroke-width="2.88" stroke-linecap="round"/>
+                                        </svg>
+                                        </div>
+                                     <div class="swiper-button-prev">
+                                        <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.814 1.75049L9.30837 9.14195C9.86133 9.68731 10.7578 9.68731 11.3108 9.14195L18.8052 1.75049" stroke="currentColor" stroke-width="2.88" stroke-linecap="round"/>
+                                        </svg>                                        
+                                     </div>  
+                                 </div>
+                            </div>
+                            <div class="gallery-slider swiper-container overflow-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="image-wrapper">
+                                            <img src="/assets/images/product-image-1.png" alt="Product image" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info-wrapper pt-7.5">
+                        <div class="product-info-wrapper-inner flex flex-col gap-[35px] max-lg:gap-4">
+                            <div class="breadcrumbs max-lg:hidden">
+                                <div class="breadcrumbs-inner">
+                                    <ul class="breadcrumbs-list list-none flex gap-[35px]">
+                                        <li class="breadcrumb-item">Shop</li>
+                                        <li class="breadcrumb-item">Women</li>
+                                        <li class="breadcrumb-item">Top</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="product-title title text-left">
+                                Raven Hoodie With <br>Black colored Design
+                            </h2>
+                            <div class="reviews-wrapper">
+                                <div class="reviews-wrapper-inner flex flex-row gap-[25px] items-center">
+                                    <span class="review-stars flex gap-[15px] items-center">
+                                        <svg width="150" height="22" viewBox="0 0 150 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#EDD146"/>
+                                            <path d="M43 0L45.4697 7.60081H53.4616L46.996 12.2984L49.4656 19.8992L43 15.2016L36.5344 19.8992L39.004 12.2984L32.5384 7.60081H40.5303L43 0Z" fill="#EDD146"/>
+                                            <path d="M75 0L77.4697 7.60081H85.4616L78.996 12.2984L81.4656 19.8992L75 15.2016L68.5344 19.8992L71.004 12.2984L64.5384 7.60081H72.5303L75 0Z" fill="#EDD146"/>
+                                            <path d="M107 0L109.47 7.60081H117.462L110.996 12.2984L113.466 19.8992L107 15.2016L100.534 19.8992L103.004 12.2984L96.5384 7.60081H104.53L107 0Z" fill="#EDD146"/>
+                                            <path d="M139 0L141.47 7.60081H149.462L142.996 12.2984L145.466 19.8992L139 15.2016L132.534 19.8992L135.004 12.2984L128.538 7.60081H136.53L139 0Z" fill="#EDD146"/>
+                                        </svg>
+                                        <span class="review-count">3.5</span>
+                                    </span>
+                                    <div class="comments-count-wrapper flex gap-[15px] items-center">
+                                        <span class="icon-message">
+                                            <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.5 5.40552C7.08579 5.40552 6.75 5.7413 6.75 6.15552C6.75 6.56973 7.08579 6.90552 7.5 6.90552V5.40552ZM15.5 6.90552C15.9142 6.90552 16.25 6.56973 16.25 6.15552C16.25 5.7413 15.9142 5.40552 15.5 5.40552V6.90552ZM7.5 9.40552C7.08579 9.40552 6.75 9.7413 6.75 10.1555C6.75 10.5697 7.08579 10.9055 7.5 10.9055V9.40552ZM11.5 10.9055C11.9142 10.9055 12.25 10.5697 12.25 10.1555C12.25 9.7413 11.9142 9.40552 11.5 9.40552V10.9055ZM21.282 14.0635L21.9503 14.404V14.404L21.282 14.0635ZM20.408 14.9375L20.7485 15.6058L20.408 14.9375ZM20.408 1.3735L20.7485 0.70525L20.7485 0.70525L20.408 1.3735ZM21.282 2.24754L21.9503 1.90704V1.90704L21.282 2.24754ZM2.59202 1.3735L2.93251 2.04176L2.93251 2.04176L2.59202 1.3735ZM1.71799 2.24754L2.38624 2.58803L2.38624 2.58803L1.71799 2.24754ZM2.70734 18.5416L3.14003 19.1542L3.14011 19.1542L2.70734 18.5416ZM6.66989 15.742L6.23712 15.1295H6.23712L6.66989 15.742ZM1.59027 18.6331L2.20486 18.2032H2.20486L1.59027 18.6331ZM2.60335 18.6038L2.2683 17.9328L2.26829 17.9328L2.60335 18.6038ZM1.92692 18.8411L1.8173 19.5831H1.8173L1.92692 18.8411ZM2.66983 18.5675L2.26547 17.9358L2.26536 17.9359L2.66983 18.5675ZM2.64376 18.5831L2.2785 17.928L2.27845 17.9281L2.64376 18.5831ZM7.76828 15.1895L7.90589 15.9267L7.90589 15.9267L7.76828 15.1895ZM7.30048 15.3381L7.61351 16.0196L7.61352 16.0196L7.30048 15.3381ZM7.5 6.90552H15.5V5.40552H7.5V6.90552ZM7.5 10.9055H11.5V9.40552H7.5V10.9055ZM4.7 1.90552H18.3V0.405518H4.7V1.90552ZM20.75 4.35552V11.9555H22.25V4.35552H20.75ZM20.75 11.9555C20.75 12.5279 20.7494 12.9122 20.7252 13.208C20.7018 13.4952 20.6599 13.6324 20.6138 13.723L21.9503 14.404C22.1221 14.0667 22.1892 13.7101 22.2203 13.3302C22.2506 12.9591 22.25 12.5032 22.25 11.9555H20.75ZM18.3 15.9055C18.8477 15.9055 19.3035 15.9061 19.6747 15.8758C20.0546 15.8447 20.4112 15.7776 20.7485 15.6058L20.0675 14.2693C19.9769 14.3154 19.8396 14.3573 19.5525 14.3808C19.2566 14.4049 18.8724 14.4055 18.3 14.4055V15.9055ZM20.6138 13.723C20.4939 13.9582 20.3027 14.1494 20.0675 14.2693L20.7485 15.6058C21.2659 15.3421 21.6866 14.9214 21.9503 14.404L20.6138 13.723ZM18.3 1.90552C18.8724 1.90552 19.2566 1.9061 19.5525 1.93028C19.8396 1.95373 19.9769 1.99562 20.0675 2.04176L20.7485 0.70525C20.4112 0.533406 20.0546 0.466295 19.6747 0.435257C19.3035 0.404934 18.8477 0.405518 18.3 0.405518V1.90552ZM22.25 4.35552C22.25 3.80784 22.2506 3.35198 22.2203 2.98085C22.1892 2.60096 22.1221 2.24431 21.9503 1.90704L20.6138 2.58803C20.6599 2.67859 20.7018 2.81587 20.7252 3.103C20.7494 3.39887 20.75 3.78309 20.75 4.35552H22.25ZM20.0675 2.04176C20.3027 2.1616 20.4939 2.35283 20.6138 2.58803L21.9503 1.90704C21.6866 1.3896 21.2659 0.968902 20.7485 0.70525L20.0675 2.04176ZM4.7 0.405518C4.15232 0.405518 3.69646 0.404934 3.32533 0.435257C2.94544 0.466295 2.58879 0.533406 2.25153 0.70525L2.93251 2.04176C3.02307 1.99562 3.16035 1.95373 3.44748 1.93028C3.74336 1.9061 4.12757 1.90552 4.7 1.90552V0.405518ZM2.25 4.35552C2.25 3.78309 2.25058 3.39887 2.27476 3.103C2.29822 2.81587 2.3401 2.67859 2.38624 2.58803L1.04973 1.90704C0.877888 2.24431 0.810777 2.60096 0.779739 2.98085C0.749417 3.35198 0.75 3.80784 0.75 4.35552H2.25ZM2.25153 0.70525C1.73408 0.968902 1.31338 1.3896 1.04973 1.90704L2.38624 2.58803C2.50608 2.35283 2.69731 2.1616 2.93251 2.04176L2.25153 0.70525ZM18.3 14.4055H8.51639V15.9055H18.3V14.4055ZM3.14011 19.1542L7.10267 16.3545L6.23712 15.1295L2.27457 17.9291L3.14011 19.1542ZM0.75 17.8611C0.75 18.0608 0.749252 18.2622 0.764406 18.4278C0.77946 18.5923 0.817386 18.8366 0.97568 19.0629L2.20486 18.2032C2.27289 18.3005 2.26568 18.3731 2.25816 18.291C2.25499 18.2564 2.25258 18.2065 2.2513 18.1315C2.25002 18.0569 2.25 17.9701 2.25 17.8611H0.75ZM2.26829 17.9328C2.18118 17.9763 2.11175 18.0107 2.0523 18.0387C1.99244 18.0669 1.9529 18.0838 1.92597 18.0939C1.86294 18.1177 1.92374 18.0825 2.03654 18.0992L1.8173 19.5831C2.07835 19.6216 2.30366 19.5546 2.45491 19.4976C2.6054 19.4409 2.77432 19.3568 2.93841 19.2748L2.26829 17.9328ZM0.975679 19.0629C1.17274 19.3447 1.47716 19.5328 1.8173 19.5831L2.03654 18.0992C2.10457 18.1092 2.16545 18.1469 2.20486 18.2032L0.975679 19.0629ZM2.25 17.8611V4.35552H0.75V17.8611H2.25ZM2.27465 17.929C2.26983 17.9324 2.26637 17.9349 2.26338 17.937C2.26043 17.939 2.25887 17.9401 2.25804 17.9407C2.25672 17.9416 2.26002 17.9393 2.26547 17.9358L3.0742 19.1991C3.10147 19.1817 3.12688 19.1635 3.14003 19.1542L2.27465 17.929ZM2.9384 19.2748C2.95307 19.2675 2.9808 19.2539 3.00907 19.2381L2.27845 17.9281C2.28396 17.925 2.28751 17.9232 2.28623 17.9238C2.28538 17.9243 2.28372 17.9251 2.28053 17.9267C2.27732 17.9283 2.27354 17.9302 2.2683 17.9328L2.9384 19.2748ZM2.26536 17.9359C2.26971 17.9331 2.27403 17.9305 2.2785 17.928L3.00902 19.2381C3.03112 19.2258 3.05295 19.2127 3.0743 19.1991L2.26536 17.9359ZM8.51639 14.4055C8.16604 14.4055 7.8965 14.4026 7.63067 14.4522L7.90589 15.9267C8.00388 15.9084 8.1118 15.9055 8.51639 15.9055V14.4055ZM7.10266 16.3545C7.4331 16.1211 7.52294 16.0612 7.61351 16.0196L6.98745 14.6565C6.7417 14.7694 6.52325 14.9273 6.23712 15.1295L7.10266 16.3545ZM7.63067 14.4522C7.40869 14.4936 7.19265 14.5623 6.98745 14.6565L7.61352 16.0196C7.70679 15.9768 7.80499 15.9456 7.90589 15.9267L7.63067 14.4522Z" fill="#807D7E"/>
+                                            </svg>
+                                        </span>
+                                        <span class="comments-count">120 comment</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="variants-wrapper flex flex-col gap-[35px]">
+                                <div class="variant-option-wrapper flex flex-col gap-[25px] variant-options-size text-left">
+                                    <div class="option-label flex gap-5">
+                                        <span class="label">Select Size</span>
+                                        <a href="#" class="size-guide-link link flex gap-[15px] items-center">Size Guide 
+                                            <span class="icon icon-arrow">
+                                                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="variant-options">
+                                        <div class="variant-options-inner flex gap-5">
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-size" id="option-xs" value="xs">
+                                                <label for="option-xs" class="option-label rounded-xl">XS</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-size" id="option-s" value="s">
+                                                <label for="option-s" class="option-label rounded-xl">S</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-size" id="option-m" value="m">
+                                                <label for="option-m" class="option-label rounded-xl">M</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-size" checked id="option-l" value="l">
+                                                <label for="option-l" class="option-label rounded-xl">L</label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-size" id="option-xl" value="xl">
+                                                <label for="option-xl" class="option-label rounded-xl">XL</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="variant-option-wrapper flex flex-col gap-[25px] variant-options-colour text-left">
+                                    <div class="option-label">
+                                        <span class="label">Colours Available</span>
+                                    </div>
+                                    <div class="variant-options">
+                                        <div class="variant-options-inner flex gap-5">
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-color" checked id="option-black" value="black">
+                                                <label for="option-black" class="option-label rounded-full relative" style="background-color:#3C4242; --psuedo-active-color: #3C4242"></label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-color" id="option-yellow" value="yellow">
+                                                <label for="option-yellow" class="option-label rounded-full relative" style="background-color:#EDD146; --psuedo-active-color: #EDD146"></label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-color" id="option-pink" value="pink">
+                                                <label for="option-pink" class="option-label rounded-full relative" style="background-color:#EB84B0; --psuedo-active-color: #EB84B0"></label>
+                                            </div>
+                                            <div class="option">
+                                                <input type="radio" hidden name="option-color" id="option-maroon" value="maroon">
+                                                <label for="option-maroon" class="option-label rounded-full relative" style="background-color:#9C1F35; --psuedo-active-color: #9C1F35"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-form">
+                                <form action="/" method="post" class="flex w-full flex-col relative">
+                                    <div class="buttons-wrapper flex gap-[25px] items-center">
+                                        <button class="button button--primary color--purple flex items-center justify-center gap-3">
+                                            <span class="icon">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 3.33334H3.00526C3.85578 3.33334 4.56986 3.97375 4.6621 4.81926L5.3379 11.0141C5.43014 11.8596 6.14422 12.5 6.99474 12.5H14.205C14.9669 12.5 15.6317 11.9834 15.82 11.2452L16.9699 6.73592C17.2387 5.68212 16.4425 4.65741 15.355 4.65741H5.5M5.52063 15.5208H6.14563M5.52063 16.1458H6.14563M14.6873 15.5208H15.3123M14.6873 16.1458H15.3123M6.66667 15.8333C6.66667 16.2936 6.29357 16.6667 5.83333 16.6667C5.3731 16.6667 5 16.2936 5 15.8333C5 15.3731 5.3731 15 5.83333 15C6.29357 15 6.66667 15.3731 6.66667 15.8333ZM15.8333 15.8333C15.8333 16.2936 15.4602 16.6667 15 16.6667C14.5398 16.6667 14.1667 16.2936 14.1667 15.8333C14.1667 15.3731 14.5398 15 15 15C15.4602 15 15.8333 15.3731 15.8333 15.8333Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>
+                                            </span>
+                                            <span class="btn-text">Add To Cart</span>
+                                        </button>
+                                        <div class="button product-price-wrapper button--secondary">
+                                            <span class="product-price price">$63.00</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <hr class="seperator">
+                            <div class="trust-badges">
+                                <div class="trust-badges-wrapper grid grid-cols-2 max-md:grid-cols-1 gap-x-17 gap-y-5">
+                                    <div class="trust-badge flex gap-[15px] items-center">
+                                        <div class="icon-wrapper">
+                                            <span class="icon rounded-full">
+                                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 4.75H16M4 12.25H7M10 12.25H13M3.4 16H13.6C14.4401 16 14.8601 16 15.181 15.7956C15.4632 15.6159 15.6927 15.329 15.8365 14.9762C16 14.5751 16 14.0501 16 13V4C16 2.9499 16 2.42485 15.8365 2.02377C15.6927 1.67096 15.4632 1.38413 15.181 1.20436C14.8601 1 14.4401 1 13.6 1H3.4C2.55992 1 2.13988 1 1.81901 1.20436C1.53677 1.38413 1.3073 1.67096 1.16349 2.02377C1 2.42485 1 2.9499 1 4V13C1 14.0501 1 14.5751 1.16349 14.9762C1.3073 15.329 1.53677 15.6159 1.81901 15.7956C2.13988 16 2.55992 16 3.4 16Z" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+                                                </svg>                                                    
+                                            </span></div>
+                                        <div class="text-wrapper">Secure payment</div>
+                                    </div>
+                                    <div class="trust-badge flex gap-[15px] items-center">
+                                        <div class="icon-wrapper">
+                                            <span class="icon rounded-full">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12.6349 17H5.36505C4.36129 17 3.54758 16.2007 3.54758 15.2147V8.57964C3.54758 8.06342 2.91221 7.8049 2.54061 8.16992C2.20135 8.50317 1.62054 8.32034 1.54167 7.85546L1.0248 4.80914C0.902057 4.08569 1.24222 3.36209 1.88247 2.98474L5.19652 1.03149C5.29304 0.974606 5.41751 0.99658 5.48783 1.08292C7.2884 3.29381 10.7116 3.29381 12.5122 1.08292C12.5825 0.99658 12.707 0.974606 12.8035 1.03149L16.1175 2.98474C16.7578 3.36209 17.0979 4.08569 16.9752 4.80914L16.4583 7.85546C16.3795 8.32034 15.7986 8.50317 15.4594 8.16992C15.0878 7.8049 14.4524 8.06342 14.4524 8.57964V15.2147C14.4524 16.2007 13.6387 17 12.6349 17Z" stroke="currentColor" stroke-width="1.1"/>
+                                                </svg>                                                    
+                                            </span>
+                                        </div>
+                                        <div class="text-wrapper">Size & Fit</div>
+                                    </div>
+                                    <div class="trust-badge flex gap-[15px] items-center">
+                                        <div class="icon-wrapper">
+                                            <span class="icon rounded-full">
+                                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M11.8 12.6667V1.46667C11.8 1.20893 11.5985 1 11.35 1H1.45C1.20147 1 1 1.20893 1 1.46667V12.6667C1 12.9244 1.20147 13.1333 1.45 13.1333H2.8M11.8 12.6667C11.8 12.9244 11.5985 13.1333 11.35 13.1333H6.4M11.8 12.6667V4.26667C11.8 4.00893 12.0015 3.8 12.25 3.8H15.2136C15.333 3.8 15.4474 3.84917 15.5318 3.93668L18.8682 7.39665C18.9526 7.48417 19 7.60287 19 7.72663V12.6667C19 12.9244 18.7985 13.1333 18.55 13.1333H17.2M11.8 12.6667C11.8 12.9244 12.0015 13.1333 12.25 13.1333H13.6M2.8 13.1333C2.8 14.1643 3.60589 15 4.6 15C5.59411 15 6.4 14.1643 6.4 13.1333M2.8 13.1333C2.8 12.1024 3.60589 11.2667 4.6 11.2667C5.59411 11.2667 6.4 12.1024 6.4 13.1333M13.6 13.1333C13.6 14.1643 14.4059 15 15.4 15C16.3941 15 17.2 14.1643 17.2 13.1333M13.6 13.1333C13.6 12.1024 14.4059 11.2667 15.4 11.2667C16.3941 11.2667 17.2 12.1024 17.2 13.1333" stroke="currentColor" stroke-width="1.1"/>
+                                                </svg>                                                    
+                                            </span></div>
+                                        <div class="text-wrapper">Free shipping</div>
+                                    </div>
+                                    <div class="trust-badge flex gap-[15px] items-center">
+                                        <div class="icon-wrapper">
+                                            <span class="icon rounded-full">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.44444 15.2222C5.44444 16.2041 4.64851 17 3.66667 17C2.68483 17 1.88889 16.2041 1.88889 15.2222C1.88889 14.2404 2.68483 13.4444 3.66667 13.4444C4.64851 13.4444 5.44444 14.2404 5.44444 15.2222ZM5.44444 15.2222H12.5556C13.5374 15.2222 14.3333 14.4263 14.3333 13.4444V9.88889M12.5556 2.77778C12.5556 3.75962 13.3515 4.55556 14.3333 4.55556C15.3152 4.55556 16.1111 3.75962 16.1111 2.77778C16.1111 1.79594 15.3152 1 14.3333 1C13.3515 1 12.5556 1.79594 12.5556 2.77778ZM12.5556 2.77778H5.44444C4.4626 2.77778 3.66667 3.57372 3.66667 4.55556V8.11111M17 11.6667L14.6476 9.13983C14.474 8.95339 14.1926 8.95339 14.0191 9.13983L11.6667 11.6667M6.33333 6.33333L3.98094 8.86017C3.80737 9.04661 3.52596 9.04661 3.3524 8.86017L1 6.33333" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+                                                </svg>
+                                            </span></div>
+                                        <div class="text-wrapper">Free Shipping & Returns</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="product-description" class="section-product-description w-full section-padding text-left relative">
+            <div class="header-wrapper pb-17.5 text-left">
+                <h2 class="section-title ps-5">Big Saving Zone</h2>
+              </div>
+            <div class="product-description-wrapper w-full flex lg:gap-[91px] max-lg:flex-col max-lg:gap-[50px]">
+                <div class="product-tabs">
+                    <div class="tab-headers-list-wrapper">
+                        <ul class="list flex lg:gap-7.5 lg:mb-7.5">
+                            <li class="list-item active">
+                                <div class="text-wrapper">
+                                    <span class="text">Description</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="text-wrapper">
+                                    <span class="text">User Comments</span> <span class="count count-comment">21</span>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="text-wrapper">
+                                    <span class="text">Question & Answer</span> <span class="count count-qa">4</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs-content-wrapper">
+                        <div id="tab-description" class="tab-content">
+                            <p class="description">
+                                100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide  all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.
+                            </p>
+                            <div class="product-details">
+                                <div class="product-details-inner grid grid-cols-3 max-md:grid-cols-2">
+                                    <div class="detail-item">
+                                        <div class="title">Fabric</div>
+                                        <div class="details">Bio-washed Cotton</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <div class="title">Pattern</div>
+                                        <div class="details">Printed</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <div class="title">Fit</div>
+                                        <div class="details">Regular-fit</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <div class="title">Neck</div>
+                                        <div class="details">Round Neck</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <div class="title">Sleeve</div>
+                                        <div class="details">Half-sleeves</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <div class="title">Style</div>
+                                        <div class="details">Casual Wear</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-comments" class="tab-content"></div>
+                        <div id="tab-qa" class="tab-content"></div>
+                    </div>
+                </div>
+                <div class="product-video-media relative">
+                    <video poster="/assets/images/video-poster.png">
+                        <source src="/assets/images/pdp_description_dummy.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="custom-controls absolute inset-0">
+                        <div class="play-pause-button rounded-full">
+                            <span class="icon icon-play">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.0846 5.16989C19.4179 7.0944 19.4179 11.9056 16.0846 13.8301L8.45767 18.2336C5.12434 20.1581 0.957669 17.7524 0.957669 13.9034L0.95767 5.09661C0.95767 1.24761 5.12434 -1.15801 8.45767 0.766487L16.0846 5.16989Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                            <span class="icon icon-pause hidden">
+                                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 5L20 19C20 20.6569 18.6569 22 17 22L16 22C14.3431 22 13 20.6569 13 19L13 5C13 3.34314 14.3431 2 16 2L17 2C18.6569 2 20 3.34315 20 5Z" fill="currentColor"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C9.65685 2 11 3.34315 11 5L11 19C11 20.6569 9.65685 22 8 22L7 22C5.34315 22 4 20.6569 4 19L4 5C4 3.34314 5.34315 2 7 2L8 2Z" fill="currentColor"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <span class="time-label">00:00</span>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div id="featured-collections" class="section-featured-collections section-padding w-full relative text-black">
+            <div class="header-wrapper pb-17.5 text-left">
+            <h2 class="section-title ps-5">Similar Products</h2>
+            </div>
+            <div class="cards-wrapper grid grid-cols-4 max-md:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 gap-12.5">
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-1.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Shirts
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block text-black">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-2.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Printed T-Shirts
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-3.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Plain T-Shirt
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-4.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Polo T-Shirt
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-5.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Hoodies & Sweetshirt
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-6.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Jeans
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-7.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Activewear
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            <div class="collection-card w-full p-0 flex flex-col gap-4">
+                <div class="image-wrapper rounded-xl overflow-hidden">
+                <img src="/assets/images/featured-cols-grid-image-8.png" alt="">
+                </div>
+                <div class="content-wrapper relative flex items-center justify-between gap-3.5">
+                <a href="#" class="card-link absolute inset-0"></a>
+                <div class="text text-left">
+                    <h3 class="title">
+                    Boxers
+                    </h3>
+                    <span class="label capitalize inline-block">Explore now</span>
+                </div>
+                <div class="icon inline-block">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="footer" class="section-footer w-full">
+          <div class="footer-wrapper footer-section-padding flex flex-col text-white">
+            <div class="footer-top px-19 max-md:px-[5] flex justify-center w-full text-left flex-row max-md:flex-col flex-wrap gap-20 max-md:gap-10 mx-auto">
+              <div class="footer-block menu">
+                <div class="menu-title mb-4">
+                  <h3 class="title">Need Help</h3>
+                </div>
+                <div class="menu-list">
+                  <ul class="list list-none">
+                    <li class="list-item relative"><a href="#"></a>Contact Us</li>
+                    <li class="list-item relative"><a href="#"></a>Track Order</li>
+                    <li class="list-item relative"><a href="#"></a>Returns & Refunds</li>
+                    <li class="list-item relative"><a href="#"></a>FAQ's</li>
+                    <li class="list-item relative"><a href="#"></a>Career</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-block menu">
+                <div class="menu-title mb-4">
+                  <h3 class="title">Company</h3>
+                </div>
+                <div class="menu-list">
+                  <ul class="list list-none">
+                    <li class="list-item relative"><a href="#"></a>About Us</li>
+                    <li class="list-item relative"><a href="#"></a>euphoria Blog</li>
+                    <li class="list-item relative"><a href="#"></a>euphoriastan</li>
+                    <li class="list-item relative"><a href="#"></a>Collaboration</li>
+                    <li class="list-item relative"><a href="#"></a>Media</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-block menu">
+                <div class="menu-title mb-4">
+                  <h3 class="title">More Info</h3>
+                </div>
+                <div class="menu-list">
+                  <ul class="list list-none">
+                    <li class="list-item relative"><a href="#"></a>Terms and Conditions</li>
+                    <li class="list-item relative"><a href="#"></a>Privacy Policy</li>
+                    <li class="list-item relative"><a href="#"></a>Shipping Poilicy</li>
+                    <li class="list-item relative"><a href="#"></a>Site map</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-block menu info">
+                <div class="menu-title mb-4">
+                  <h3 class="title">Location</h3>
+                </div>
+                <div class="menu-list">
+                  <ul class="list list-none">
+                    <li class="list-item relative"><a href="mailto:support@euphoria.in"></a>support@euphoria.in</li>
+                    <li class="list-item adress-details"><address name="address">
+                      Eklingpura Chouraha, Ahmedabad Main Road<br>
+                      (NH 8- Near Mahadev Hotel) Udaipur, India- 313002
+                    </address></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-social flex justify-between items-end max-md:items-start w-full text-left flex-row flex-wrap gap-20 max-md:gap-5 max-md:mt-12 px-[84px] max-md:flex-col max-md:px-0">
+              <div class="footer-block social-wrapper">
+                <ul class="list list-none social flex flex-row gap-2.5">
+                  <li class="list-item">
+                    <span class="icon rounded-xl icon-social icon-social-facebook">
+                      <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.43677 10.4627L9.93113 7.24131H6.84012V5.15086C6.84012 4.26955 7.27191 3.41049 8.65628 3.41049H10.0615V0.667828C10.0615 0.667828 8.7863 0.450195 7.56707 0.450195C5.02153 0.450195 3.35765 1.99309 3.35765 4.78616V7.24131H0.528076V10.4627H3.35765V18.2502H6.84012V10.4627H9.43677Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span class="icon rounded-xl icon-social icon-social-insta">
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.4657 4.66956C6.25461 4.66956 4.47113 6.45304 4.47113 8.66413C4.47113 10.8752 6.25461 12.6587 8.4657 12.6587C10.6768 12.6587 12.4603 10.8752 12.4603 8.66413C12.4603 6.45304 10.6768 4.66956 8.4657 4.66956ZM8.4657 11.2611C7.03684 11.2611 5.86871 10.0965 5.86871 8.66413C5.86871 7.23179 7.03336 6.06714 8.4657 6.06714C9.89805 6.06714 11.0627 7.23179 11.0627 8.66413C11.0627 10.0965 9.89457 11.2611 8.4657 11.2611ZM13.5554 4.50616C13.5554 5.02417 13.1382 5.43788 12.6237 5.43788C12.1057 5.43788 11.692 5.02069 11.692 4.50616C11.692 3.99163 12.1091 3.57444 12.6237 3.57444C13.1382 3.57444 13.5554 3.99163 13.5554 4.50616ZM16.2011 5.45179C16.142 4.2037 15.8569 3.09815 14.9425 2.18729C14.0317 1.27644 12.9261 0.991357 11.678 0.928779C10.3917 0.855771 6.53621 0.855771 5.24988 0.928779C4.00527 0.987881 2.89973 1.27296 1.98539 2.18382C1.07105 3.09468 0.789453 4.20022 0.726875 5.44831C0.653867 6.73464 0.653867 10.5901 0.726875 11.8765C0.785977 13.1246 1.07105 14.2301 1.98539 15.141C2.89973 16.0518 4.0018 16.3369 5.24988 16.3995C6.53621 16.4725 10.3917 16.4725 11.678 16.3995C12.9261 16.3404 14.0317 16.0553 14.9425 15.141C15.8534 14.2301 16.1385 13.1246 16.2011 11.8765C16.2741 10.5901 16.2741 6.73812 16.2011 5.45179ZM14.5393 13.2567C14.2681 13.9381 13.7431 14.463 13.0582 14.7377C12.0327 15.1444 9.59906 15.0506 8.4657 15.0506C7.33234 15.0506 4.89527 15.141 3.87316 14.7377C3.19176 14.4665 2.6668 13.9416 2.39215 13.2567C1.98539 12.2311 2.07926 9.79749 2.07926 8.66413C2.07926 7.53077 1.98887 5.0937 2.39215 4.07159C2.66332 3.39019 3.18828 2.86522 3.87316 2.59058C4.89875 2.18382 7.33234 2.27769 8.4657 2.27769C9.59906 2.27769 12.0361 2.18729 13.0582 2.59058C13.7396 2.86175 14.2646 3.38671 14.5393 4.07159C14.946 5.09718 14.8521 7.53077 14.8521 8.66413C14.8521 9.79749 14.946 12.2346 14.5393 13.2567Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span class="icon rounded-xl icon-social icon-social-twitter">
+                      <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.3463 4.18884C16.3576 4.34695 16.3576 4.5051 16.3576 4.66321C16.3576 9.4859 12.6869 15.0428 5.978 15.0428C3.91112 15.0428 1.99108 14.4441 0.375977 13.4051C0.669642 13.439 0.951973 13.4503 1.25694 13.4503C2.96237 13.4503 4.53231 12.8743 5.78599 11.8916C4.18219 11.8578 2.83815 10.8074 2.37507 9.36168C2.60098 9.39555 2.82685 9.41814 3.06405 9.41814C3.39158 9.41814 3.71914 9.37295 4.02407 9.29393C2.35251 8.95507 1.09879 7.48681 1.09879 5.71359V5.66843C1.58443 5.9395 2.1492 6.10891 2.74776 6.13147C1.76514 5.47638 1.12139 4.35825 1.12139 3.09327C1.12139 2.41562 1.30206 1.79443 1.61833 1.25229C3.41414 3.46599 6.11352 4.91165 9.14039 5.0698C9.08393 4.79873 9.05003 4.5164 9.05003 4.23403C9.05003 2.22361 10.6764 0.585938 12.6981 0.585938C13.7485 0.585938 14.6972 1.02642 15.3636 1.73797C16.1881 1.57985 16.9787 1.27489 17.679 0.857005C17.4079 1.7041 16.8319 2.41565 16.0752 2.8674C16.8093 2.78837 17.5209 2.58503 18.1759 2.3027C17.679 3.02551 17.0578 3.66927 16.3463 4.18884Z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span class="icon rounded-xl icon-social icon-social-linkedin">
+                      <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.83892 4.43788V13.4658H0.427576V4.43788H2.83892ZM0.277389 2.08494C0.277389 1.73451 0.399764 1.44526 0.644514 1.21719C0.889264 0.989132 1.21745 0.875101 1.62908 0.875101C2.03514 0.875101 2.36055 0.989132 2.6053 1.21719C2.85561 1.44526 2.98076 1.73451 2.98076 2.08494C2.98076 2.43538 2.85561 2.72463 2.6053 2.95269C2.36055 3.18076 2.03514 3.29479 1.62908 3.29479C1.21745 3.29479 0.889264 3.18076 0.644514 2.95269C0.399764 2.72463 0.277389 2.43538 0.277389 2.08494ZM7.51943 6.36529V13.4658H5.11643V4.43788H7.36924L7.51943 6.36529ZM7.16899 8.63479H6.51818C6.51818 7.96729 6.6044 7.36654 6.77684 6.83254C6.94927 6.29298 7.19124 5.83407 7.50274 5.45582C7.81424 5.07201 8.18415 4.77998 8.61246 4.57973C9.04634 4.37391 9.53027 4.27101 10.0643 4.27101C10.487 4.27101 10.8736 4.33219 11.2241 4.45457C11.5745 4.57694 11.8749 4.77163 12.1252 5.03863C12.3811 5.30563 12.5757 5.65885 12.7092 6.09829C12.8483 6.53773 12.9178 7.07451 12.9178 7.70863V13.4658H10.4981V7.70029C10.4981 7.29979 10.4425 6.98829 10.3313 6.76579C10.22 6.54329 10.0559 6.38754 9.83899 6.29854C9.62762 6.20398 9.36618 6.15669 9.05468 6.15669C8.73206 6.15669 8.45115 6.22066 8.21196 6.3486C7.97834 6.47654 7.78365 6.65454 7.6279 6.8826C7.47771 7.1051 7.36368 7.36654 7.28581 7.66691C7.20793 7.96729 7.16899 8.28991 7.16899 8.63479Z" fill="currentColor"/>
+                        </svg>                      
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-block app-details">
+                <div class="block-title">
+                  <h3 class="title">Download the app</h3>
+                </div>
+                <div class="details-wrapper flex gap-5.5">
+                  <div class="store-details play-store-details">
+                    <div class="store-link-wrapper rounded-[10px] overflow-hidden">
+                      <a href="#">
+                        <img src="/assets/images/google-play.png" alt="" srcset="">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="store-details app-store-details">
+                    <div class="store-link-wrapper rounded-[10px] overflow-hidden">
+                      <a href="#">
+                        <img src="/assets/images/app-store.png" alt="" srcset="">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom text-left w-full mt-[50px]">
+              <div class="accordions-wrapper">
+                <div class="accordion">
+                  <div class="accordion-item px-[84px] py-7 max-md:px-[25px] max-md:py-5">
+                    <div class="accordion-item-header flex items-center justify-between">
+                      Popular Categories
+                      <span class="icon icon-caret">
+                        <svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.814 1.75049L9.30837 9.14195C9.86133 9.68731 10.7578 9.68731 11.3108 9.14195L18.8052 1.75049" stroke="currentColor" stroke-width="2.88" stroke-linecap="round"/>
+                          </svg>                                               
+                      </span>
+                    </div><!-- /.accordion-item-header -->
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        <ul class="list">
+                          <li class="list-item relative"><a href="#" class="absolute inset-0"></a>Shirts</li>
+                          <li class="list-item relative"><a href="#" class="absolute inset-0"></a>Hoodies</li>
+                          <li class="list-item relative"><a href="#" class="absolute inset-0"></a>Jackets</li>
+                          <li class="list-item relative"><a href="#" class="absolute inset-0"></a>Shorts</li>
+                        </ul>
+                      </div>
+                    </div><!-- /.accordion-item-body -->
+                  </div><!-- /.accordion-item -->
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="copyright-wrapper flex justify-center items-center">
+                <p class="copyright-text">
+                  Copyright © 2024 Uptek Pvt Ltd. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
