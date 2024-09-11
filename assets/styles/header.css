@@ -98,4 +98,7 @@
     cursor: pointer;
     display: inline-block;
     margin: 20px;
+    @media not all and (min-width: 768px) {
+        margin: 5px;
+    }
 }

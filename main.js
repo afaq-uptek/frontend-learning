@@ -300,6 +300,29 @@ document.addEventListener('DOMContentLoaded', function() {
         img.style.setProperty('--aspect-ratio', aspectRatio);
     };
   })
+
+  const tabs = document.querySelectorAll('.product-tabs .tab-link');
+  const contents = document.querySelectorAll('.tabs-content-wrapper .tab-content');
+
+  tabs.forEach(tab => {
+      tab.addEventListener('click', function(event) {
+          event.preventDefault();
+
+          // Remove active class from all tabs
+          tabs.forEach(tab => {
+            const list_item = tab.closest('.list-item');
+            list_item.classList.remove('active')
+          });
+          // Add active class to the clicked tab
+          tab.closest('.list-item').classList.add('active');
+
+          // Hide all tab contents
+          contents.forEach(content => content.classList.add('hidden'));
+          // Show the content corresponding to the clicked tab
+          const contentId = tab.getAttribute('href');
+          document.querySelector(contentId).classList.remove('hidden');
+      });
+  });
 })
 
 

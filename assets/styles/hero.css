@@ -84,17 +84,17 @@
         line-height: 93.6px;
         letter-spacing: 0.31px;
     }
-
-    @media not all and (min-width: 768px) {
-        left: 25px;
+    @media not all and (min-width: 1280px) {
+        left: 80px;
 
         .pre-heading, .sub-heading {
-            font-size: 22px;
+            font-size: 28px;
+            line-height: 1;
         }
 
         .heading {
-            font-size: 48px;
-            line-height: 1.2;
+            font-size: 60px;
+            line-height: 1;
         }
     }
     @media not all and (min-width: 1024px) {
@@ -110,17 +110,17 @@
             line-height: 1;
         }
     }
-    @media not all and (min-width: 1280px) {
-        left: 80px;
+    @media not all and (min-width: 768px) {
+        left: 25px;
 
         .pre-heading, .sub-heading {
-            font-size: 28px;
-            line-height: 1;
+            font-size: 22px;
         }
 
         .heading {
-            font-size: 60px;
-            line-height: 1;
+            font-size: 48px;
+            line-height: 1.2;
         }
     }
+    
 }
