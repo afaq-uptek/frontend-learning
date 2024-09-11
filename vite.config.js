@@ -8,6 +8,7 @@ export default defineConfig({
         main: '/index.html',
         about: '/shop.html',
         contact: '/product.html',
+        cart: '/cart.html',
         // Add other pages as needed
       },
     },
