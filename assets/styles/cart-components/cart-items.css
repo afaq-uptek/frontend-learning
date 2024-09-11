@@ -1,0 +1,140 @@
+.cart-items {
+    &--header {
+        background-color: var(--color-text-title);
+        display: grid;
+        grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr;
+        .header-col {
+            font-family: Causten-SemiBold;
+            font-size: 18px;
+            line-height: normal;
+            letter-spacing: 0;
+        }
+    }
+    &--rows {
+        .line-item {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr;
+
+            &--details {
+                .details-wrapper {
+                    &-image--wrapper {
+                        width: 105px;
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        @media not all and (min-width: 1024px) {
+                            width: calc(30% - 10px);
+                        }
+                    }
+                    .details {
+                        .title {
+                            font-family: Causten-Bold;
+                            font-size: 18px;
+                            color: var(--color-text-title);
+                        }
+                        .props-wrapper {
+                            .prop {
+                                span {
+                                    font-family: Causten-Medium;
+                                    font-size: 14px;
+                                    color: var(--color-text);
+                                }
+                            }
+                            .quantity-wrapper {
+                                margin-top: 10px;
+                                background-color: #F6F6F6;
+                                padding: 10px 23px;
+                                gap: 16px;
+                                .button {
+                                    padding-block: 0;
+                                    padding-inline: 0;
+                                    width: 9px;
+                                    font-family: Causten-Medium;
+                                }
+                                input {
+                                    background-color: transparent;
+                                    height: auto;
+                                    font-size: 12px;
+                                    text-align: center;
+                                    font-family: Causten-Medium;
+                                    appearance: none;
+                                    -moz-appearance: textfield;
+                                    -webkit-appearance: none;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                        -webkit-appearance: none;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                        @media not all and (min-width: 1024px) {
+                            width: calc(70% - 10px);
+                        }
+                    }
+                }
+                @media not all and (min-width: 1024px) {
+                    grid-column: span 5;
+                }
+            }
+            &--price {
+                .price {
+                    font-family: Causten-Bold;
+                    font-size: 18px;
+                }
+            }
+            &--quantity {
+                .quantity-wrapper {
+                    background-color: #F6F6F6;
+                    padding: 10px 23px;
+                    gap: 16px;
+                    .button {
+                        padding-block: 0;
+                        padding-inline: 0;
+                        width: 9px;
+                        font-family: Causten-Medium;
+                    }
+                    input {
+                        background-color: transparent;
+                        height: auto;
+                        font-size: 12px;
+                        text-align: center;
+                        font-family: Causten-Medium;
+                        appearance: none;
+                        -moz-appearance: textfield;
+                        -webkit-appearance: none;
+                        &::-webkit-outer-spin-button,
+                        &::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            &--shipping {
+                .text {
+                    font-family: Causten-Bold;
+                    font-size: 18px;
+                    color: #BEBCBD;
+                }
+            }
+            &--actions {
+                .icon {
+                    line-height: normal;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    &-delete {
+                        color: var(--color-button);
+                    }
+                }
+            }
+            &:not(:first-child) {
+                border-top: 1px solid #BEBCBD
+            }
+        }
+    }
+}

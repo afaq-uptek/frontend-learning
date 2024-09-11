@@ -37,6 +37,12 @@ a {
   &:hover {
     color: var(--color-text-title);
   }
+  &.link-purple {
+    color: var(--color-button);
+    font-family: Causten-SemiBold;
+    letter-spacing: 0.28px;
+    line-height: normal;
+  }
 }
 
 body {
@@ -140,6 +146,10 @@ button, .button {
       padding-inline: 44px;
       padding-block: 12px;
     }
+  }
+
+  &.rounded-none {
+    border-radius: 0;
   }
 
   &.button--secondary {
