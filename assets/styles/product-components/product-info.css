@@ -139,6 +139,9 @@
                             position: relative;
                             transition: width ease-in-out 250ms;
                             margin-top: 22px;
+                            @media not all and (min-width: 768px) {
+                                margin-top: 15px;
+                            }
                         }
                         &.active {
                             &::after {
