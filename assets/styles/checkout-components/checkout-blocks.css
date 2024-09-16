@@ -1,0 +1,113 @@
+.checkout-blocks-wrapper {
+    .checkout-blocks {
+        padding-block: 20px;
+        width: calc(66.21% - 19px);
+        .checkout-block {
+            padding-block: 30px;
+            border-bottom: 1px solid #EDEEF2;
+            &:first-child {
+                padding-block-start: 0;
+            }
+            &:last-child {
+                border-bottom: unset;
+            }
+        }
+        .block-title {
+            .title {
+                font-family: Core-Sans-C-Bold;
+                font-size: 22px;
+                line-height: 33.5px;
+                letter-spacing: 0.44px;
+            }
+            .header-text {
+                font-family: Causten;
+                font-size: 16px;
+                letter-spacing: 0;
+                line-height: normal;
+                color: #3C4242;
+                margin-top: 8px;
+            }
+        }
+        .block-fields-wrapper {
+            .block-field {
+                .field-wrapper {
+                    label {
+                        font-size: 16px;
+                        font-family: Causten-SemiBold;
+                        color: var(--color-text);
+                        letter-spacing: 0.2px;
+                        line-height: normal;
+                    }
+                    input[type='text'] {
+                        width: 100%;
+                        height: 49px;
+                        background-color: #f6f6f6;
+                        border-radius: 8px;
+                        font-family: Causten;
+                        font-size: 14px;
+                        padding-inline-start: 20px;
+                        &::placeholder {
+                            color: var(--color-text-title);
+                            opacity: 0.7;
+                        }
+                    }
+                    select {
+                        width: 100%;
+                        height: 49px;
+                        background-color: #f6f6f6;
+                        border-radius: 8px;
+                        font-family: Causten;
+                        font-size: 14px;
+                        padding-inline: 20px;
+                        color: rgba(128, 125, 126, 0.7);
+                        -webkit-appearance: none; /* Remove default caret in Chrome/Safari */
+                        -moz-appearance: none;    /* Remove default caret in Firefox */
+                        appearance: none;  
+                        background-size: 10px 5px;
+                        background-repeat: no-repeat;
+                        background-position: calc(100% - 20px) center;
+                        background-image : url('data:image/svg+xml;charset=utf-8,<svg width="21" height="11" viewBox="0 0 21 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.814 1.75049L9.30837 9.14195C9.86133 9.68731 10.7578 9.68731 11.3108 9.14195L18.8052 1.75049" stroke="currentColor" stroke-width="2.88" stroke-linecap="round"/></svg>');
+                    }
+                    input[type='checkbox'] {
+                        width: 18px;
+                        height: 18px;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        border: 2px solid #BEBCBD;
+                        position: relative;
+                        transition: transform cubic-bezier(0.25, 0.46, 0.45, 0.94) .3s;
+                        &::before {
+                            position: absolute;
+                            inset: 0;
+                            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20px" height="20px"><path fill="currentColor" d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"/></svg>');
+                            display: inline-block;
+                            transform: scale(0);
+                            background-size: 14px 14px;
+                            background-repeat: no-repeat;
+                            content: '';
+                            background-position: center;
+                        }
+                        &:checked::before {
+                            transform: scale(1);
+                        }
+                    }
+                    .button {
+                        padding: 16px 20px;
+                        color: var(--color-body);
+                        background-color: var(--color-button);
+                        font-size: 18px;
+                        min-width: auto;
+                        min-height: auto;
+                        font-family: Causten-Medium;
+                        line-height: normal;
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+    }
+    .summary-wrapper {
+        width: calc(33.79% - 19px);
+    }
+    
+}

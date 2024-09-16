@@ -1,0 +1,25 @@
+.section-checkout {
+    &.section-padding {
+        padding-block-start: 0px;
+        padding-inline: 100px;
+    }
+    .breadcrumbs { 
+        padding-top: 23px; 
+        padding-bottom: 52px;
+        &-inner {
+            .breadcrumbs-list {
+                .breadcrumb-item {
+                    color: var(--color-text);
+                    &.active {
+                        color: var(--color-text-title);
+                    }
+                }
+            }
+        }
+    }
+    .header-wrapper {
+        .section-title {
+            font-size: 28px;
+        }
+    }
+}
